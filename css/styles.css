@@ -122,11 +122,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.6rem + 4.75vw);
+  font-size: calc(1.6rem + 4.50vw);
 }
 @media (min-width: 1100px) {
   h1, .h1 {
-    font-size: 4.75rem;
+    font-size: 4.50rem;
   }
 }
 
