@@ -3790,7 +3790,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   list-style: none;
 }
 .navbar-nav .show > .nav-link,
@@ -4214,11 +4214,11 @@ textarea.form-control-lg {
 
 .card-subtitle {
   margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .card-text:last-child {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .card-link + .card-link {
@@ -4227,7 +4227,7 @@ textarea.form-control-lg {
 
 .card-header {
   padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
-  margin-bottom: 0;
+  margin-bottom: 30px;
   color: var(--bs-card-cap-color);
   background-color: var(--bs-card-cap-bg);
   border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
@@ -4300,7 +4300,7 @@ textarea.form-control-lg {
   }
   .card-group > .card {
     flex: 1 0 0%;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
   .card-group > .card + .card {
     margin-left: 0;
