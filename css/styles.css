@@ -3705,14 +3705,14 @@ textarea.form-control-lg {
 .nav-fill > .nav-link,
 .nav-fill .nav-item {
   flex: 1 1 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .nav-justified > .nav-link,
 .nav-justified .nav-item {
   flex-basis: 0;
   flex-grow: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .nav-fill .nav-item .nav-link,
