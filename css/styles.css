@@ -109,6 +109,12 @@
     display: block; /* Removes inline spacing below the image */
 }
 
+@media (max-width: 768px) { /* Adjust width for devices smaller than 768px */
+    .responsive-image {
+        max-width: 90%; /* Add some padding on smaller screens */
+        margin: 0 auto; /* Center the image */
+    }
+}
 
 body {
   margin: 0;
