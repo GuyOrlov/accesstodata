@@ -97,13 +97,18 @@
     height: auto; /* Maintains aspect ratio */
 }
 
-.responsive-image {
-    width: 100%;
-    max-width: 640px; /* Keeps the original max width for larger screens */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures no inline spacing below the image */
-    margin: 0 auto; /* Optional: Centers the image if the container has extra space */
+.image-container {
+    max-width: 100%; /* Ensures the container fits the screen width */
+    overflow: hidden; /* Prevents overflow */
 }
+
+.responsive-image {
+    width: 100%; /* Forces the image to scale within its container */
+    max-width: 100%; /* Ensures it doesn’t exceed the screen width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes inline spacing below the image */
+}
+
 
 body {
   margin: 0;
