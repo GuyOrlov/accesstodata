@@ -99,7 +99,7 @@
 
 .responsive-image {
     width: 100%;
-    max-width: 800px; /* Keeps the original max width for larger screens */
+    max-width: 640px; /* Keeps the original max width for larger screens */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Ensures no inline spacing below the image */
     margin: 0 auto; /* Optional: Centers the image if the container has extra space */
