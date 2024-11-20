@@ -10956,7 +10956,7 @@ p.lead {
 }
 
 .social-icon {
-    font-size: 1.5rem; /* Base size for mobile and smaller screens */
+    font-size: 2rem; /* Base size for mobile and smaller screens */
     text-decoration: none; /* Removes underline */
 }
 
@@ -10968,7 +10968,7 @@ p.lead {
 /* Larger icon size for desktop screens */
 @media (min-width: 769px) {
     .social-icon {
-        font-size: 2rem; /* Increase size on larger screens */
+        font-size: 3rem; /* Increase size on larger screens */
     }
 }
 
