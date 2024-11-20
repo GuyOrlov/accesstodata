@@ -91,6 +91,12 @@
   }
 }
 
+.responsive-video {
+    width: 100%;
+    max-width: 640px; /* Keeps the original max width for larger screens */
+    height: auto; /* Maintains aspect ratio */
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
