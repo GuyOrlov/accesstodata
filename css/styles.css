@@ -91,7 +91,6 @@
   }
 }
 
-<style>
   #cta {
     background-color: #f4f4f4;
     text-align: center;
@@ -113,21 +112,22 @@
     margin-bottom: 20px;
   }
 
-  .cta-button {
-    display: inline-block;
-    background-color: #0078d7;
-    color: ##000000;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
+.cta-button {
+  display: inline-block;
+  background-color: #0078d7;
+  color: #ffffff; /* Ensure the text is white */
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  .cta-button:hover {
-    background-color: #000000;
-  }
-</style>
+.cta-button:hover {
+  background-color: #000000;
+  color: #ffffff; /* Keep the text white on hover */
+}
+
 
 /* Aspect ratio container */
 .aspect-ratio {
