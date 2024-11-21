@@ -129,7 +129,7 @@
   }
 </style>
 
-/* Aspect ratio container for 16:9 ratio */
+/* Aspect ratio container */
 .aspect-ratio {
     position: relative;
     width: 100%;
@@ -154,13 +154,15 @@
 }
 
 /* Mobile-specific adjustments */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    . {
+        padding-top: 56.25%; /* Keep the 16:9 ratio */
+    }
     .responsive-video {
-        max-width: 100%;  /* Ensure full width on small screens */
-        margin: 10px 0;   /* Adjust margins for mobile */
+        width: 100%;
+        margin: 10px 0;
     }
 }
-
 
 .responsive-image {
     width: 100%; /* Forces the image to scale within its container */
@@ -6842,11 +6844,13 @@ textarea.form-control-lg {
   position: relative;
   width: 100%;
 }
+
 .ratio::before {
   display: block;
   padding-top: var(--bs-aspect-ratio);
   content: "";
 }
+
 .ratio > * {
   position: absolute;
   top: 0;
@@ -6856,19 +6860,19 @@ textarea.form-control-lg {
 }
 
 .ratio-1x1 {
-  --bs-aspect-ratio: 100%;
+  --bs-aspect-ratio: 100%; /* 1:1 aspect ratio */
 }
 
 .ratio-4x3 {
-  --bs-aspect-ratio: 75%;
+  --bs-aspect-ratio: 75%; /* 4:3 aspect ratio */
 }
 
 .ratio-16x9 {
-  --bs-aspect-ratio: 56.25%;
+  --bs-aspect-ratio: 56.25%; /* 16:9 aspect ratio */
 }
 
 .ratio-21x9 {
-  --bs-aspect-ratio: 42.8571428571%;
+  --bs-aspect-ratio: 42.8571428571%; /* 21:9 aspect ratio */
 }
 
 .fixed-top {
