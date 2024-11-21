@@ -91,6 +91,10 @@
   }
 }
 
+.text-black {
+    color: black;
+}
+
   #cta {
     background-color: #f4f4f4;
     text-align: center;
