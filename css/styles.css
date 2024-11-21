@@ -129,11 +129,11 @@
   }
 </style>
 
-/* Aspect ratio container */
+/* Aspect ratio container for 16:9 ratio */
 .aspect-ratio {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* This is a 16:9 aspect ratio (height/width * 100) */
+    padding-top: 56.25%; /* 16:9 ratio */
 }
 
 /* Ensures the video or iframe fills the container */
@@ -149,15 +149,18 @@
 /* General responsive video styling */
 .responsive-video {
     width: 100%;
-    max-width: 768px; /* Max width for larger screens */
     height: auto;
     margin: 20px 0;
 }
 
-.image-container {
-    max-width: 100%; /* Ensures the container fits the screen width */
-    overflow: hidden; /* Prevents overflow */
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+    .responsive-video {
+        max-width: 100%;  /* Ensure full width on small screens */
+        margin: 10px 0;   /* Adjust margins for mobile */
+    }
 }
+
 
 .responsive-image {
     width: 100%; /* Forces the image to scale within its container */
