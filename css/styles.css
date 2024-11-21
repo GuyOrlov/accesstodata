@@ -128,11 +128,16 @@
   color: #ffffff; /* Keep the text white on hover */
 }
 
-@media (max-width: 768px) { /* Targets screens smaller than 768px */
+@media (max-width: 768px) {
   #testimonials h2 {
-    text-align: center; /* Centers the text */
+    text-align: center; /* Ensures the h2 is centered */
+  }
+
+  #testimonials p {
+    text-align: center; /* Centers the paragraph */
   }
 }
+
 
 /* Aspect ratio container */
 .aspect-ratio {
@@ -160,14 +165,12 @@
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
-    . {
-        padding-top: 56.25%; /* Keep the 16:9 ratio */
-    }
-    .responsive-video {
-        width: 100%;
-        margin: 10px 0;
-    }
+  .responsive-video {
+    width: 100%;
+    margin: 10px 0; /* Ensures proper spacing */
+  }
 }
+
 
 .responsive-image {
     width: 100%; /* Forces the image to scale within its container */
