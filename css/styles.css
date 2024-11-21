@@ -460,12 +460,12 @@ table {
 
 /* Technical Skills */
 .technical {
-    background-color: #E24B32; /* Red for Technical Skills */
+    background-color: #E24B32 !important; /* Red for Technical Skills */
 }
 
 /* Soft Skills */
 .soft {
-    background-color: #9C27B0; /* Purple for Soft Skills */
+    background-color: #9C27B0 !important; /* Purple for Soft Skills */
 }
 
 /* Optional: Adding icons styling for better appearance */
@@ -488,6 +488,7 @@ table {
 .list-inline li {
     margin-bottom: 0.5rem;
 }
+
 
 /* FontAwesome Icons */
 .fa-solid {
