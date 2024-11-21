@@ -416,15 +416,15 @@ figure {
   margin: 0 0 1rem;
 }
 
-img,
-svg {
-  vertical-align: middle;
+img, svg {
+    vertical-align: middle;
 }
 
 table {
-  caption-side: bottom;
-  border-collapse: collapse;
+    caption-side: bottom;
+    border-collapse: collapse;
 }
+
 /* Technical Skills Column Bars */
 .skill-column-wrapper {
     display: flex;
