@@ -425,38 +425,48 @@ table {
   caption-side: bottom;
   border-collapse: collapse;
 }
-/* General Styles */
-.skills-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.skills-list li {
-    margin-bottom: 1rem;
-}
-
-.skills-list span {
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
-
-/* Skill Bar */
+/* General skill bar styles */
 .skill-bar {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    height: 20px;
     width: 100%;
-    position: relative;
-    overflow: hidden;
+    height: 10px;
+    background-color: #e0e0e0; /* Light grey background */
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.fill {
+    height: 100%;
+    background-color: blue; /* Bar color */
+    border-radius: 5px;
+}
+
+/* Technical skills - vertical bars */
+.skill-column-bar {
+    width: 40px; /* Width of the column bar */
+    height: 100%;
+    background-color: #e0e0e0; /* Light grey background */
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.skill-column-bar .fill {
+    width: 100%;
+    background-color: blue; /* Bar color */
+    border-radius: 5px;
+}
+
+/* Soft Skills - Horizontal bars */
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
 .skill-bar .fill {
-    background-color: #007bff;
-    height: 100%;
-    transition: width 0.3s ease-in-out;
+    background-color: blue;
+    border-radius: 5px;
 }
 
 /* List Inline */
@@ -473,8 +483,6 @@ table {
 .fa-solid {
     margin-right: 8px;
 }
-
-
 
 caption {
   padding-top: 0.5rem;
