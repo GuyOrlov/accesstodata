@@ -135,22 +135,22 @@
   }
 
   /* Center text for Projects */
-  #projects h2 {
+  #projects h2, #projects p {
     text-align: center;
   }
 
   /* Center text for Skills */
-  #skills h2 {
+  #skills h2, #skills p {
     text-align: center;
   }
 
   /* Center text for Certifications */
-  #certifications h2 {
+  #certifications h2, #certifications p {
     text-align: center;
   }
 
   /* Center text for Contact */
-  #contact h2 {
+  #contact h2, #contact p {
     text-align: center;
   }
 }
