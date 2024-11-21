@@ -425,37 +425,36 @@ table {
   caption-side: bottom;
   border-collapse: collapse;
 }
-/* General skill bar styles */
-.skill-bar {
-    width: 100%;
-    height: 10px;
-    background-color: #e0e0e0; /* Light grey background */
-    border-radius: 5px;
-    margin-top: 5px;
+/* Technical Skills Column Bars */
+.skill-column-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-.fill {
-    height: 100%;
-    background-color: blue; /* Bar color */
-    border-radius: 5px;
+.skill-column {
+    width: 80px; /* Adjust width to fit your design */
+    text-align: center;
+    position: relative;
 }
 
-/* Technical skills - vertical bars */
 .skill-column-bar {
-    width: 40px; /* Width of the column bar */
-    height: 100%;
+    width: 100%;
+    height: 200px; /* Adjust the height of the column bars */
     background-color: #e0e0e0; /* Light grey background */
     border-radius: 5px;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .skill-column-bar .fill {
     width: 100%;
     background-color: blue; /* Bar color */
     border-radius: 5px;
+    position: absolute;
+    bottom: 0;
 }
 
-/* Soft Skills - Horizontal bars */
+/* Soft Skills Horizontal Bars */
 .skill-bar {
     width: 100%;
     height: 10px;
