@@ -439,7 +439,7 @@ table {
 .skills-list span {
     font-weight: bold;
     display: inline-block;
-    margin-bottom: 0.25rem; /* Slightly reduced for better spacing */
+    margin-bottom: 0.5rem;
 }
 
 /* Common skill bar container */
@@ -458,23 +458,36 @@ table {
     transition: width 0.3s ease;
 }
 
-/* List Inline */
-.list-inline {
-    list-style: none;
-    padding: 0;
-    margin: 0; /* Remove extra margin from the list */
+/* Technical Skills */
+.technical {
+    background-color: #E24B32; /* Red for Technical Skills */
 }
 
+/* Soft Skills */
+.soft {
+    background-color: #9C27B0; /* Purple for Soft Skills */
+}
+
+/* Optional: Adding icons styling for better appearance */
 .list-inline li {
     display: flex;
     align-items: center;
-    margin-bottom: 0.75rem; /* Adjusted margin for consistency */
+    margin-bottom: 10px;
 }
 
 .list-inline li i {
     margin-right: 10px; /* Space between icon and text */
 }
 
+/* List Inline */
+.list-inline {
+    list-style: none;
+    padding: 0;
+}
+
+.list-inline li {
+    margin-bottom: 0.5rem;
+}
 
 /* FontAwesome Icons */
 .fa-solid {
