@@ -129,15 +129,31 @@
 }
 
 @media (max-width: 768px) {
-  #testimonials h2 {
-    text-align: center; /* Ensures the h2 is centered */
+  /* Center text for Testimonials */
+  #testimonials h2, #testimonials p {
+    text-align: center;
   }
 
-  #testimonials p {
-    text-align: center; /* Centers the paragraph */
+  /* Center text for Projects */
+  #projects h2 {
+    text-align: center;
+  }
+
+  /* Center text for Skills */
+  #skills h2 {
+    text-align: center;
+  }
+
+  /* Center text for Certifications */
+  #certifications h2 {
+    text-align: center;
+  }
+
+  /* Center text for Contact */
+  #contact h2 {
+    text-align: center;
   }
 }
-
 
 /* Aspect ratio container */
 .aspect-ratio {
