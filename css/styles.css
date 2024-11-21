@@ -425,6 +425,7 @@ table {
   caption-side: bottom;
   border-collapse: collapse;
 }
+/* General Styles */
 .skills-list {
     list-style: none;
     padding: 0;
@@ -435,6 +436,13 @@ table {
     margin-bottom: 1rem;
 }
 
+.skills-list span {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+/* Skill Bar */
 .skill-bar {
     background-color: #f4f4f4;
     border: 1px solid #ddd;
@@ -450,6 +458,22 @@ table {
     height: 100%;
     transition: width 0.3s ease-in-out;
 }
+
+/* List Inline */
+.list-inline {
+    list-style: none;
+    padding: 0;
+}
+
+.list-inline li {
+    margin-bottom: 0.5rem;
+}
+
+/* FontAwesome Icons */
+.fa-solid {
+    margin-right: 8px;
+}
+
 
 
 caption {
