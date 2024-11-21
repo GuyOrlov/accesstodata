@@ -4894,6 +4894,7 @@ textarea.form-control-lg {
 
 .list-group-numbered {
   list-style-type: none;
+  padding-left: 0;
   counter-reset: section;
 }
 .list-group-numbered > .list-group-item::before {
