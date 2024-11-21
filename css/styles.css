@@ -278,11 +278,9 @@ h4, .h4 {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-box:hover {
-    transform: translateY(-5px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .image-container {
@@ -297,7 +295,9 @@ h4, .h4 {
 }
 
 .project-details {
-    flex: 2;
+    padding: 15px;
+    color: #333; /* Default text color */
+    transition: color 0.3s ease;
 }
 
 .project-details h3 {
@@ -309,6 +309,15 @@ h4, .h4 {
 .project-details p {
     font-size: 1rem;
     color: #555;
+}
+
+.project-box:hover {
+    background-color: #333; /* Dark gray or black on hover */
+}
+
+.project-box:hover .project-title,
+.project-box:hover .project-description {
+    color: #fff; /* White text color on hover */
 }
 
 
