@@ -312,12 +312,12 @@ h4, .h4 {
 }
 
 .project-box:hover {
-    background-color: #333; /* Dark gray or black on hover */
+    background-color: #333; /* Gray on hover */
 }
 
 .project-box:hover .project-title,
 .project-box:hover .project-description {
-    color: #fff; /* White text color on hover */
+    color: #fff; /* White text on hover */
 }
 
 
