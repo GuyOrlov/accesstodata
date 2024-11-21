@@ -318,6 +318,9 @@ h4, .h4 {
     color: #fff; /* White text color on hover */
 }
 
+.project-box:hover .project-description span {
+    color: #fff; /* White text for description span on hover */
+}
 
 
 h5, .h5 {
