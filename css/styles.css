@@ -131,7 +131,7 @@
 
 .responsive-video {
     width: 100%;
-    max-width: 800px;
+    max-width: 768px;
     height: auto;
     margin: 20px 0;
 }
