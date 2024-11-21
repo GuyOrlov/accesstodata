@@ -268,6 +268,50 @@ h4, .h4 {
   }
 }
 
+/* Styling the Project Boxes */
+.project-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-details {
+    flex: 2;
+}
+
+.project-details h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.project-details p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
 h5, .h5 {
   font-size: 1.25rem;
 }
