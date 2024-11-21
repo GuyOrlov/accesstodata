@@ -128,16 +128,32 @@
   color: #ffffff; /* Keep the text white on hover */
 }
 
-/* Combined Media Query for 768px */
 @media (max-width: 768px) {
-  /* Center text for various sections */
-  #testimonials h2, #testimonials p,
-  #projects h2, #projects p,
-  #skills h2, #skills p,
-  #certifications h2, #certifications p,
+  /* Center text for Testimonials */
+  #testimonials h2, #testimonials p {
+    text-align: center;
+  }
+
+  /* Center text for Projects */
+  #projects h2, #projects p {
+    text-align: center;
+  }
+
+  /* Center text for Skills */
+  #skills h2, #skills p {
+    text-align: center;
+  }
+
+  /* Center text for Certifications */
+  #certifications h2, #certifications p {
+    text-align: center;
+  }
+
+  /* Center text for Contact */
   #contact h2, #contact p {
     text-align: center;
   }
+}
 
 /* Aspect ratio container */
 .aspect-ratio {
@@ -163,11 +179,13 @@
     margin: 20px 0;
 }
 
-  /* Mobile video and image styling */
-  .responsive-video, .responsive-image {
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .responsive-video {
     width: 100%;
-    margin: 10px 0;
+    margin: 10px 0; /* Ensures proper spacing */
   }
+}
 
 
 .responsive-image {
@@ -398,65 +416,64 @@ figure {
   margin: 0 0 1rem;
 }
 
-img, svg {
-    vertical-align: middle;
+img,
+svg {
+  vertical-align: middle;
 }
 
 table {
-    caption-side: bottom;
-    border-collapse: collapse;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+/* General Styles */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Ensure Flex Wrap for skills list */
-.skills-list, .list-inline, .skill-column-wrapper {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on small screens */
-  justify-content: space-between;
+.skills-list li {
+    margin-bottom: 1rem;
 }
 
-.skills-list li, .list-inline li, .skill-column {
-  width: 100%; /* Make items stack on smaller screens */
-  margin-bottom: 1rem;
+.skills-list span {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
-@media (min-width: 768px) {
-  /* On larger screens, display two items per row */
-  .skills-list li, .list-inline li {
-    width: 48%;
-  }
-
-  .skill-column {
-    width: 30%; /* Adjust skill columns */
-    margin-bottom: 1.5rem;
-  }
+/* Skill Bar */
+.skill-bar {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-@media (min-width: 1200px) {
-  /* For very large screens, adjust to 3 items per row */
-  .skills-list li, .list-inline li {
-    width: 30%;
-  }
-}
-
-/* Skill bar fill classes */
 .skill-bar .fill {
-  height: 1rem;
-  border-radius: 0.25rem;
+    background-color: #007bff;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
 }
 
-.skill-bar .fill.tableau { background-color: #E15B24; }
-.skill-bar .fill.power-bi { background-color: #F2C311; }
-.skill-bar .fill.figma { background-color: #F24E1E; }
-.skill-bar .fill.excel { background-color: #0074CC; }
-.skill-bar .fill.google-sheets { background-color: #34A853; }
-.skill-bar .fill.canva { background-color: #FF5777; }
-.skill-bar .fill.flourish { background-color: #E87B27; }
-
-/* Adjust icon and text alignment */
-.skills-list i, .list-inline i {
-  vertical-align: middle; /* Ensure icons are aligned with text */
-  margin-right: 10px; /* Space between icon and text */
+/* List Inline */
+.list-inline {
+    list-style: none;
+    padding: 0;
 }
+
+.list-inline li {
+    margin-bottom: 0.5rem;
+}
+
+/* FontAwesome Icons */
+.fa-solid {
+    margin-right: 8px;
+}
+
 
 
 caption {
