@@ -131,9 +131,11 @@
 
 .responsive-video {
     width: 100%;
-    max-width: 640px; /* Keeps the original max width for larger screens */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
 }
+
 
 .image-container {
     max-width: 100%; /* Ensures the container fits the screen width */
