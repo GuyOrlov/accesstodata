@@ -425,7 +425,6 @@ table {
   caption-side: bottom;
   border-collapse: collapse;
 }
-
 .skills-list {
     list-style: none;
     padding: 0;
@@ -434,12 +433,6 @@ table {
 
 .skills-list li {
     margin-bottom: 1rem;
-}
-
-.skills-list span {
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 0.5rem;
 }
 
 .skill-bar {
@@ -453,7 +446,7 @@ table {
 }
 
 .skill-bar .fill {
-    background-color: #007bff; /* Blue color */
+    background-color: #007bff;
     height: 100%;
     transition: width 0.3s ease-in-out;
 }
