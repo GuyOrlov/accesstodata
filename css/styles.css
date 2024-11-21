@@ -129,12 +129,14 @@
   }
 </style>
 
+/* Aspect ratio container */
 .aspect-ratio {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 56.25%; /* This is a 16:9 aspect ratio (height/width * 100) */
 }
 
+/* Ensures the video or iframe fills the container */
 .aspect-ratio iframe,
 .aspect-ratio video {
     position: absolute;
@@ -144,13 +146,13 @@
     height: 100%;
 }
 
+/* General responsive video styling */
 .responsive-video {
     width: 100%;
-    max-width: 768px;
+    max-width: 768px; /* Max width for larger screens */
     height: auto;
     margin: 20px 0;
 }
-
 
 .image-container {
     max-width: 100%; /* Ensures the container fits the screen width */
