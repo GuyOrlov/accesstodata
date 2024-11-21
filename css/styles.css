@@ -319,9 +319,8 @@ h4, .h4 {
 }
 
 .project-box:hover .project-description span {
-    color: #fff; /* White text for description span on hover */
+    color: #fff; /* Ensure description text also turns white */
 }
-
 
 h5, .h5 {
   font-size: 1.25rem;
