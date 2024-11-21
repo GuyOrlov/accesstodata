@@ -128,32 +128,16 @@
   color: #ffffff; /* Keep the text white on hover */
 }
 
+/* Combined Media Query for 768px */
 @media (max-width: 768px) {
-  /* Center text for Testimonials */
-  #testimonials h2, #testimonials p {
-    text-align: center;
-  }
-
-  /* Center text for Projects */
-  #projects h2, #projects p {
-    text-align: center;
-  }
-
-  /* Center text for Skills */
-  #skills h2, #skills p {
-    text-align: center;
-  }
-
-  /* Center text for Certifications */
-  #certifications h2, #certifications p {
-    text-align: center;
-  }
-
-  /* Center text for Contact */
+  /* Center text for various sections */
+  #testimonials h2, #testimonials p,
+  #projects h2, #projects p,
+  #skills h2, #skills p,
+  #certifications h2, #certifications p,
   #contact h2, #contact p {
     text-align: center;
   }
-}
 
 /* Aspect ratio container */
 .aspect-ratio {
@@ -179,13 +163,11 @@
     margin: 20px 0;
 }
 
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-  .responsive-video {
+  /* Mobile video and image styling */
+  .responsive-video, .responsive-image {
     width: 100%;
-    margin: 10px 0; /* Ensures proper spacing */
+    margin: 10px 0;
   }
-}
 
 
 .responsive-image {
@@ -471,9 +453,9 @@ table {
     margin-bottom: 1.5rem;
   }
 
-  /* Adjust skill bar width on larger screens */
+  /* Adjust skill bar heights */
   .fill {
-    height: 1.5rem; /* Increase the height of the skill bars on larger screens */
+    height: 1rem; /* Adjust as needed for better visual scaling */
   }
 }
 
