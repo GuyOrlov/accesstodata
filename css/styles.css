@@ -407,83 +407,57 @@ table {
     border-collapse: collapse;
 }
 
-/* Base styles for mobile and smaller screens */
-.skill-bar {
-  height: 1rem;
-  background-color: #ddd;
-  border-radius: 0.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.fill {
-  height: 100%;
-  background-color: red;
-  border-radius: 0.25rem;
-}
-
-/* Flexbox layout for the skills list */
-.skills-list, .list-inline {
+/* Ensure Flex Wrap for skills list */
+.skills-list, .list-inline, .skill-column-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Ensures that items wrap in smaller screens */
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
   justify-content: space-between;
-  padding-left: 0;
-  padding-right: 0;
 }
 
-.skills-list li, .list-inline li {
-  width: 100%; /* Make items stack vertically on smaller screens */
+.skills-list li, .list-inline li, .skill-column {
+  width: 100%; /* Make items stack on smaller screens */
   margin-bottom: 1rem;
 }
 
-/* Desktop view: Adjust for larger screens */
 @media (min-width: 768px) {
+  /* On larger screens, display two items per row */
   .skills-list li, .list-inline li {
-    width: 48%; /* Adjust to have two items per row on medium to large screens */
-    margin-bottom: 1.5rem;
-  }
-
-  .skill-column-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 48%;
   }
 
   .skill-column {
-    width: 30%; /* Each column takes up 30% of the container */
+    width: 30%; /* Adjust skill columns */
     margin-bottom: 1.5rem;
-  }
-
-  /* Adjust skill bar heights */
-  .fill {
-    height: 1rem; /* Adjust as needed for better visual scaling */
   }
 }
 
-/* Larger desktop view */
 @media (min-width: 1200px) {
+  /* For very large screens, adjust to 3 items per row */
   .skills-list li, .list-inline li {
-    width: 30%; /* 3 items per row on very large screens */
-  }
-
-  .skill-column {
-    width: 20%; /* Each column takes up 20% of the container */
+    width: 30%;
   }
 }
 
-/* List Inline */
-.list-inline {
-    list-style: none;
-    padding: 0;
+/* Skill bar fill classes */
+.skill-bar .fill {
+  height: 1rem;
+  border-radius: 0.25rem;
 }
 
-.list-inline li {
-    margin-bottom: 0.5rem;
+.skill-bar .fill.tableau { background-color: #E15B24; }
+.skill-bar .fill.power-bi { background-color: #F2C311; }
+.skill-bar .fill.figma { background-color: #F24E1E; }
+.skill-bar .fill.excel { background-color: #0074CC; }
+.skill-bar .fill.google-sheets { background-color: #34A853; }
+.skill-bar .fill.canva { background-color: #FF5777; }
+.skill-bar .fill.flourish { background-color: #E87B27; }
+
+/* Adjust icon and text alignment */
+.skills-list i, .list-inline i {
+  vertical-align: middle; /* Ensure icons are aligned with text */
+  margin-right: 10px; /* Space between icon and text */
 }
 
-/* FontAwesome Icons */
-.fa-solid {
-    margin-right: 8px;
-}
 
 caption {
   padding-top: 0.5rem;
