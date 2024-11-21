@@ -426,6 +426,39 @@ table {
   border-collapse: collapse;
 }
 
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    margin-bottom: 1rem;
+}
+
+.skills-list span {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar .fill {
+    background-color: #007bff; /* Blue color */
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
