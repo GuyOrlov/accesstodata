@@ -458,12 +458,11 @@ table {
     transition: width 0.3s ease;
 }
 
-/* Technical Skills */
+/* Specific background colors for different skill categories */
 .technical {
     background-color: #E24B32 !important; /* Red for Technical Skills */
 }
 
-/* Soft Skills */
 .soft {
     background-color: #9C27B0 !important; /* Purple for Soft Skills */
 }
@@ -489,6 +488,32 @@ table {
     margin-bottom: 0.5rem;
 }
 
+/* Responsive Design - Ensure skill bars are flexible */
+@media (min-width: 768px) {
+    .skills-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .skill-bar {
+        width: 80%; /* Adjust width for desktop */
+    }
+
+    .fill {
+        max-width: 100%; /* Ensure the fill bar doesn't exceed 100% */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-list li {
+        display: block; /* Stack items on smaller screens */
+    }
+
+    .skill-bar {
+        width: 100%; /* Full width for mobile */
+    }
+}
 
 /* FontAwesome Icons */
 .fa-solid {
