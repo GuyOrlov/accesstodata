@@ -286,6 +286,75 @@ body {
   line-height: 1.6;
 }
 
+/* Projects Section */
+.projects-section {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section Title Styles */
+.section-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Project Box Styles */
+.project-box {
+  width: 90%;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Image Container Styles */
+.image-container {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Image Styles */
+.responsive-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Project Title Styles */
+.project-details h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Project Description Styles */
+.project-description {
+  color: #ccc;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+/* Lead Paragraph Styles */
+.lead {
+  color: #aaa;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
 
 hr {
   margin: 1rem 0;
