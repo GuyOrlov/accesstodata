@@ -217,6 +217,76 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* Section Styles */
+.services-section {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title and Description Styles */
+.service-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.service-description {
+  font-size: 1.2em;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+/* Flexbox Container for Service Boxes */
+.service-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Service Box Styles */
+.service-box {
+  width: 90%;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Icon Styles */
+.service-icon {
+  font-size: 2em;
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+/* Service Title Styles */
+.service-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Service Description Styles */
+.service-description {
+  color: #aaa;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+
 hr {
   margin: 1rem 0;
   color: inherit;
