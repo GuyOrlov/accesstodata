@@ -477,6 +477,10 @@ table {
 
 .skills-list li {
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures content adjusts on smaller screens */
 }
 
 .skills-list span {
@@ -485,66 +489,57 @@ table {
     margin-bottom: 0.5rem;
 }
 
-/* Common skill bar container */
+/* Common Skill Bar Styles */
 .skill-bar {
     width: 100%;
-    height: 10px;
+    height: 20px; /* Consistent height */
     background-color: #e0e0e0; /* Light gray background */
     border-radius: 5px;
     margin-top: 5px;
+    overflow: hidden;
+    position: relative;
 }
 
-/* The filled portion of the progress bar */
+/* The filled portion of the skill bar */
 .fill {
     height: 100%;
     border-radius: 5px;
     transition: width 0.3s ease;
+    position: relative;
 }
 
-/* Specific background colors for different skill categories */
+.skill-percentage {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Specific Background Colors for Skill Categories */
 .technical {
-    background-color: #E24B32 !important; /* Red for Technical Skills */
+    background-color: #E24B32; /* Red for Technical Skills */
 }
 
 .soft {
-    background-color: #9C27B0 !important; /* Purple for Soft Skills */
+    background-color: #9C27B0; /* Purple for Soft Skills */
 }
 
-/* Optional: Adding icons styling for better appearance */
-.list-inline li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+/* Icons Styling for Better Appearance */
+.fa-solid {
+    margin-right: 8px; /* Space between icon and text */
 }
 
-.list-inline li i {
-    margin-right: 10px; /* Space between icon and text */
-}
-
-/* List Inline */
-.list-inline {
-    list-style: none;
-    padding: 0;
-}
-
-.list-inline li {
-    margin-bottom: 0.5rem;
-}
-
-/* Responsive Design - Ensure skill bars are flexible */
+/* Responsive Design */
 @media (min-width: 768px) {
     .skills-list li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: nowrap; /* Inline items on larger screens */
     }
 
     .skill-bar {
         width: 80%; /* Adjust width for desktop */
-    }
-
-    .fill {
-        max-width: 100%; /* Ensure the fill bar doesn't exceed 100% */
     }
 }
 
@@ -558,10 +553,6 @@ table {
     }
 }
 
-/* FontAwesome Icons */
-.fa-solid {
-    margin-right: 8px;
-}
 
 
 
