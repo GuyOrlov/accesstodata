@@ -86,9 +86,9 @@
     </p>
 
     <!-- Flex Container for Service Boxes -->
-    <div id="service-boxes" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <div id="service-boxes" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
       <!-- Service Box 1 -->
-      <div class="service-box" style="flex: 1; max-width: 22%; background: #111; border: 1px solid #333; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); text-align: center;">
+      <div class="service-box" style="width: 90%; background: #111; border: 1px solid #333; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); text-align: center;">
         <i class="fas fa-chart-bar" style="font-size: 2em; color: #00bcd4; margin-bottom: 10px;"></i>
         <h3 style="font-size: 1.5em; font-weight: bold; color: #fff; margin-bottom: 15px;">Data Analysis and Insights</h3>
         <p style="color: #aaa; font-size: 1em; line-height: 1.6;">
@@ -98,7 +98,7 @@
       </div>
 
       <!-- Service Box 2 -->
-      <div class="service-box" style="flex: 1; max-width: 22%; background: #111; border: 1px solid #333; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); text-align: center;">
+      <div class="service-box" style="width: 90%; background: #111; border: 1px solid #333; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); text-align: center;">
         <i class="fas fa-tachometer-alt" style="font-size: 2em; color: #00bcd4; margin-bottom: 10px;"></i>
         <h3 style="font-size: 1.5em; font-weight: bold; color: #fff; margin-bottom: 15px;">Dashboard Creation</h3>
         <p style="color: #aaa; font-size: 1em; line-height: 1.6;">
@@ -107,7 +107,7 @@
       </div>
 
       <!-- Service Box 3 -->
-      <div class="service-box" style="flex: 1; max-width: 22%; background: #111; border: 1px solid #333; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); text-align: center;">
+      <div class="service-box" style="width: 90%; background: #111; border: 1px solid #333; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); text-align: center;">
         <i class="fas fa-chalkboard-teacher" style="font-size: 2em; color: #00bcd4; margin-bottom: 10px;"></i>
         <h3 style="font-size: 1.5em; font-weight: bold; color: #fff; margin-bottom: 15px;">Workshops and Training</h3>
         <p style="color: #aaa; font-size: 1em; line-height: 1.6;">
@@ -117,7 +117,7 @@
       </div>
 
       <!-- Service Box 4 -->
-      <div class="service-box" style="flex: 1; max-width: 22%; background: #111; border: 1px solid #333; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); text-align: center;">
+      <div class="service-box" style="width: 90%; background: #111; border: 1px solid #333; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); text-align: center;">
         <i class="fas fa-cogs" style="font-size: 2em; color: #00bcd4; margin-bottom: 10px;"></i>
         <h3 style="font-size: 1.5em; font-weight: bold; color: #fff; margin-bottom: 15px;">Consulting and Optimisation</h3>
         <p style="color: #aaa; font-size: 1em; line-height: 1.6;">
@@ -127,27 +127,7 @@
       </div>
     </div>
   </div>
-
-  <style>
-    /* Mobile Styles */
-    @media (max-width: 768px) {
-      #service-boxes {
-        flex-direction: column;
-        align-items: center;
-      }
-      .service-box {
-        max-width: 100%; /* Use full width for mobile */
-        width: 90%; /* Slight padding on edges */
-        margin-bottom: 20px; /* Space between boxes */
-      }
-      .service-title {
-        font-size: 1.8em; /* Smaller font size for mobile */
-      }
-    }
-  </style>
 </section>
-
-
 
 <!-- Testimonials Section -->
 <section class="resume-section" id="testimonials">
