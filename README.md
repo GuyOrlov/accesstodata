@@ -1,6 +1,15 @@
 ## Access to Data: My Portfolio Journey from Power BI to Tableau
 Welcome to my portfolio! This collection showcases my journey in data analysis and visualisation, focusing on my work with Power BI and Tableau.
 
+## Featured project: UK Disability Data Hub
+A source-linked, accessible dashboard bringing together official UK disability statistics on prevalence, employment, benefits, food security and impairment types.
+
+- Project folder: `uk-disability-data/`
+- Dashboard: `uk-disability-data/index.html`
+- Reusable data: `uk-disability-data/data.csv`
+- Source catalogue: `uk-disability-data/README.md`
+- Intended GitHub Pages URL: https://guyorlov.github.io/accesstodata/uk-disability-data/
+
 ## Overview
 Through this portfolio, I aim to demonstrate my skills in data visualisation, dashboard creation, and insights-driven decision-making. I have worked with a variety of data sets, crafting reports and dashboards to transform raw data into actionable insights. Whether using Power BI's robust data modelling capabilities or Tableau's flexibility in visual design, my goal is always to create intuitive and informative solutions that empower stakeholders.
 
