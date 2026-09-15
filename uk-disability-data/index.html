@@ -12,16 +12,12 @@
       --forest-2:#0e2a00;
       --green:#9fe870;
       --green-soft:#d9f9c4;
-      --cream:#f5f3ee;
+      --cream:#f7f5f0;
       --white:#ffffff;
       --ink:#163300;
-      --muted:#4f6450;
-      --line:#cfd8cb;
-      --blue:#a7d8ff;
-      --pink:#ffc0cb;
-      --orange:#ffd27a;
-      --lilac:#d8c7ff;
-      --teal:#9de4d3;
+      --muted:#445248;
+      --line:#c9d2c4;
+      --soft:#eef2ea;
       --radius-s:16px;
       --radius-l:28px;
       --max:1440px;
@@ -29,7 +25,7 @@
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,"Helvetica Neue",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,"Helvetica Neue",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
     a{color:var(--forest);text-decoration-thickness:1.5px;text-underline-offset:3px}
     a:hover{text-decoration-thickness:2.5px}
     button,a{-webkit-tap-highlight-color:transparent}
@@ -37,32 +33,32 @@
     .skip:focus{left:1rem;top:1rem;z-index:9999;background:#fff;color:#000;padding:.8rem 1rem;border:3px solid #000;border-radius:999px}
 
     header{background:var(--forest);color:#fff;position:relative;overflow:hidden}
-    header:after{content:"";position:absolute;right:-110px;top:-155px;width:430px;height:430px;background:var(--green);border-radius:46% 54% 38% 62%/45% 34% 66% 55%;transform:rotate(-16deg);opacity:.98}
-    .top{max-width:var(--max);margin:auto;padding:24px 30px;display:flex;align-items:center;justify-content:space-between;gap:28px;position:relative;z-index:2}
-    .brand{display:flex;align-items:center;gap:16px;min-width:300px}
-    .mark{width:52px;height:52px;border-radius:15px;background:var(--green);display:grid;grid-template-columns:repeat(4,6px);gap:4px;align-items:end;justify-content:center;padding:11px 9px;color:var(--forest)}
+    header:after{content:"";position:absolute;right:-120px;top:-150px;width:410px;height:410px;background:var(--green);border-radius:50%;opacity:.98}
+    .top{max-width:var(--max);margin:auto;padding:22px 30px;display:flex;align-items:center;justify-content:space-between;gap:28px;position:relative;z-index:2}
+    .brand{display:flex;align-items:center;gap:15px;min-width:300px}
+    .mark{width:52px;height:52px;border-radius:15px;background:var(--green);display:grid;grid-template-columns:repeat(4,6px);gap:4px;align-items:end;justify-content:center;padding:11px 9px;color:var(--forest);flex:0 0 auto}
     .mark i{display:block;background:currentColor;border-radius:4px 4px 1px 1px}.mark i:nth-child(1){height:13px}.mark i:nth-child(2){height:20px}.mark i:nth-child(3){height:26px}.mark i:nth-child(4){height:32px}
-    .brand h1{font-size:clamp(1.35rem,2.2vw,2.1rem);margin:0;line-height:1;letter-spacing:-.04em}
-    .brand p{margin:5px 0 0;color:#d9e5d7;font-size:.95rem}
-    .nav{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
-    .nav a,.nav button{font:inherit;font-weight:700;color:#fff;background:transparent;border:0;padding:10px 13px;border-radius:999px;text-decoration:none;cursor:pointer}
-    .nav a:hover,.nav button:hover{background:rgba(255,255,255,.12)}
-    .nav a:focus-visible,.nav button:focus-visible,.tab:focus-visible,.download:focus-visible{outline:3px solid var(--green);outline-offset:3px}
-    .nav .cta{background:var(--green);color:var(--forest);padding-inline:18px}
-    .nav .cta:hover{background:#b5f58e}
+    .brand h1{font-size:clamp(1.35rem,2.2vw,2.05rem);margin:0;line-height:1.05;letter-spacing:-.04em;color:#fff}
+    .brand p{margin:5px 0 0;color:#dce8d8;font-size:.95rem}
+    .nav{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+    .nav a,.nav button{font:inherit;font-weight:750;color:#fff;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);padding:10px 13px;border-radius:999px;text-decoration:none;cursor:pointer}
+    .nav a:hover,.nav button:hover{background:#fff;color:var(--forest)}
+    .nav a:focus-visible,.nav button:focus-visible,.tab:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+    .nav .cta{background:var(--green);color:var(--forest);border-color:var(--green);padding-inline:18px}
+    .nav .cta:hover{background:#c6f3a8;color:var(--forest)}
 
-    .hero{max-width:var(--max);margin:auto;padding:44px 30px 52px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:26px;align-items:stretch;position:relative;z-index:2}
+    .hero{max-width:var(--max);margin:auto;padding:42px 30px 52px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:28px;align-items:stretch;position:relative;z-index:2}
     .hero-copy{padding:18px 0}
     .kicker{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:.86rem;text-transform:uppercase;letter-spacing:.05em;color:var(--green)}
     .kicker:before{content:"";width:11px;height:11px;border-radius:3px;background:var(--green)}
-    .hero h2{font-size:clamp(2.7rem,6vw,5.7rem);line-height:.92;letter-spacing:-.065em;margin:18px 0 20px;max-width:870px}
-    .hero-copy>p{font-size:clamp(1.05rem,1.8vw,1.32rem);max-width:720px;color:#dbe8d7;margin:0}
+    .hero h2{font-size:clamp(2.7rem,6vw,5.7rem);line-height:.94;letter-spacing:-.065em;margin:18px 0 20px;max-width:870px;color:#fff}
+    .hero-copy>p{font-size:clamp(1.05rem,1.8vw,1.3rem);max-width:720px;color:#e5eee2;margin:0}
     .hero-card{background:var(--green);color:var(--forest);border-radius:var(--radius-l);padding:28px;display:flex;flex-direction:column;justify-content:space-between;min-height:300px;position:relative;overflow:hidden}
-    .hero-card:after{content:"";position:absolute;right:-64px;bottom:-78px;width:225px;height:225px;border:28px solid rgba(22,51,0,.13);border-radius:50%}
-    .hero-card .label{font-weight:800;font-size:.92rem}
-    .hero-card .hero-number{font-size:clamp(4rem,8vw,7.2rem);font-weight:900;letter-spacing:-.08em;line-height:.85;margin:24px 0 10px}
-    .hero-card p{max-width:280px;margin:0;font-weight:700;font-size:1rem}
-    .hero-card small{display:block;margin-top:20px;font-size:.8rem;position:relative;z-index:1}
+    .hero-card:after{content:"";position:absolute;right:-70px;bottom:-85px;width:225px;height:225px;border:28px solid rgba(22,51,0,.13);border-radius:50%}
+    .hero-card .label{font-weight:850;font-size:.96rem}
+    .hero-card .hero-number{font-size:clamp(4rem,8vw,7rem);font-weight:900;letter-spacing:-.08em;line-height:.86;margin:24px 0 10px}
+    .hero-card p{max-width:300px;margin:0;font-weight:750;font-size:1rem}
+    .hero-card small{display:block;margin-top:20px;font-size:.8rem;position:relative;z-index:1;color:#304c27}
 
     main{max-width:var(--max);margin:auto;padding:42px 30px 70px}
     section{scroll-margin-top:24px}
@@ -70,22 +66,21 @@
     .section-title h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1;letter-spacing:-.055em;margin:0}
     .section-title p{margin:8px 0 0;color:var(--muted);font-size:1rem;max-width:680px}
 
-    /* Wise-inspired card system: small cards for compact facts, large cards for deeper stories */
     .metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-    .metric{min-height:210px;border-radius:var(--radius-s);padding:22px;background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column;position:relative;overflow:hidden}
-    .metric:nth-child(1){background:var(--green);border-color:var(--green)}
+    .metric{min-height:210px;border-radius:var(--radius-s);padding:22px;background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column;position:relative;overflow:hidden;color:var(--ink)}
+    .metric:nth-child(1){background:var(--green);border-color:#7fc54f}
     .metric:nth-child(2){background:var(--white)}
-    .metric:nth-child(3){background:var(--lilac);border-color:var(--lilac)}
-    .metric:nth-child(4){background:var(--pink);border-color:var(--pink)}
-    .eyebrow{font-weight:800;font-size:.88rem;display:flex;align-items:center;gap:9px;position:relative;z-index:1}
-    .dot{width:10px;height:10px;border-radius:50%;display:inline-block;background:currentColor!important}
+    .metric:nth-child(3){background:#eef3ff;border-color:#c9d7f2}
+    .metric:nth-child(4){background:#fff0f4;border-color:#e8c9d2}
+    .eyebrow{font-weight:850;font-size:.9rem;display:flex;align-items:center;gap:9px;position:relative;z-index:1}
+    .dot{width:10px;height:10px;border-radius:50%;display:inline-block;background:var(--forest)!important}
     .metric .value{font-weight:900;letter-spacing:-.07em;font-size:clamp(2.8rem,4vw,4.8rem);line-height:.9;margin:25px 0 12px;position:relative;z-index:1}
-    .metric p{margin:0;color:var(--ink);font-size:.95rem;font-weight:650;max-width:280px;position:relative;z-index:1}
-    .metric small{display:block;margin-top:auto;padding-top:20px;color:#365035;font-size:.78rem;position:relative;z-index:1}
-    .progress{height:9px;border-radius:999px;background:rgba(22,51,0,.13);margin-top:18px;overflow:hidden}
+    .metric p{margin:0;color:var(--ink);font-size:.95rem;font-weight:700;max-width:280px;position:relative;z-index:1}
+    .metric small{display:block;margin-top:auto;padding-top:20px;color:#365035;font-size:.8rem;position:relative;z-index:1}
+    .progress{height:10px;border-radius:999px;background:#dbe3d7;margin-top:18px;overflow:hidden;border:1px solid #c2cec0}
     .progress i{height:100%;display:block;border-radius:inherit;background:var(--forest)!important}
 
-    .tabs{display:flex;gap:8px;flex-wrap:wrap;background:#e7e5df;padding:5px;border-radius:999px;width:max-content;max-width:100%}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;background:#e4e7e0;padding:5px;border-radius:999px;width:max-content;max-width:100%}
     .tab{border:0;background:transparent;color:var(--forest);padding:10px 16px;border-radius:999px;font:inherit;font-weight:800;cursor:pointer}
     .tab:hover{background:#fff}
     .tab[aria-selected="true"]{background:var(--forest);color:#fff}
@@ -94,60 +89,101 @@
     .two{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
     .three{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
     .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-l);padding:30px;min-height:300px;position:relative;overflow:hidden}
-    .card:nth-child(even){background:#eef8e9}
+    .card:nth-child(even){background:#f0f7ed}
     .card h3{margin:0 0 8px;font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.05;letter-spacing:-.035em}
     .card .lead{margin:0 0 24px;color:var(--muted);font-size:1rem;max-width:650px}
     .chart{margin-top:18px}
     .barrow{display:grid;grid-template-columns:minmax(110px,1fr) 2.7fr 58px;gap:12px;align-items:center;margin:14px 0;font-size:.92rem}
-    .track{height:12px;background:#dfe7db;border-radius:999px;overflow:hidden}
+    .track{height:13px;background:#dce5d8;border-radius:999px;overflow:hidden;border:1px solid #c5d0c1}
     .fill{height:100%;border-radius:inherit;background:var(--forest)!important}
-    .fill.green{background:#2f6c1d!important}.fill.purple{background:#7952b3!important}.fill.pink{background:#a53e60!important}.fill.amber{background:#9b6414!important}
+    .fill.green,.fill.purple,.fill.pink,.fill.amber{background:var(--forest)!important}
     .barrow strong{text-align:right;font-size:.9rem}
-    .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.84rem;color:var(--muted);margin:8px 0 16px}.legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--forest);margin-right:6px}.legend span:nth-child(2):before{background:#4f8b38}
     .compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .compare>div{padding:22px;border-radius:var(--radius-s);background:var(--cream);border:0}
+    .compare>div{padding:22px;border-radius:var(--radius-s);background:var(--cream);border:1px solid var(--line)}
     .compare .big{font-size:clamp(2.2rem,4vw,4rem);font-weight:900;letter-spacing:-.06em;line-height:.9;margin:10px 0}
-    .compare span{font-size:.88rem;color:var(--muted);font-weight:700}
-    .callout{padding:18px 20px;background:var(--green);border:0;border-radius:var(--radius-s);margin:18px 0;color:var(--forest)}
+    .compare span{font-size:.88rem;color:var(--muted);font-weight:750}
+    .callout{padding:18px 20px;background:var(--green-soft);border:1px solid #a9d68d;border-radius:var(--radius-s);margin:18px 0;color:var(--forest)}
     .callout strong{color:var(--forest)}
     .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-    .mini{padding:19px;border:0;border-radius:var(--radius-s);background:var(--cream)}
+    .mini{padding:19px;border:1px solid var(--line);border-radius:var(--radius-s);background:var(--cream)}
     .mini strong{display:block;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.04em;margin:7px 0}
-    .mini span{color:var(--muted);font-size:.82rem;font-weight:650}
-    .source{font-size:.8rem;color:var(--muted);margin-top:22px;border-top:1px solid var(--line);padding-top:14px}
-    .source a{font-weight:800}
+    .mini span{color:var(--muted);font-size:.82rem;font-weight:700}
+    .source{font-size:.82rem;color:var(--muted);margin-top:22px;border-top:1px solid var(--line);padding-top:14px}
+    .source a{font-weight:850}
 
     .insight-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-    .insight{padding:24px;border-radius:var(--radius-s);border:0;min-height:215px;display:flex;flex-direction:column;justify-content:space-between}
-    .insight.food{background:var(--pink)}.insight.work{background:var(--blue)}.insight.health{background:var(--teal)}.insight.home{background:var(--lilac)}
+    .insight{padding:24px;border-radius:var(--radius-s);border:1px solid var(--line);min-height:215px;display:flex;flex-direction:column;justify-content:space-between;background:#fff;color:var(--ink)}
+    .insight.food{border-top:6px solid #7a3150}.insight.work{border-top:6px solid #285d8e}.insight.health{border-top:6px solid #267365}.insight.home{border-top:6px solid #62508c}
     .insight b{font-size:clamp(2.2rem,3.8vw,4rem);letter-spacing:-.065em;line-height:.9;display:block;margin:18px 0}
-    .insight p{color:var(--ink);font-size:.9rem;margin:0;font-weight:650}
-    .tag{display:inline-block;border-radius:999px;padding:6px 10px;font-size:.76rem;font-weight:900;background:rgba(255,255,255,.65);color:var(--forest);width:max-content}
+    .insight p{color:var(--ink);font-size:.9rem;margin:0;font-weight:700}
+    .tag{display:inline-block;border-radius:999px;padding:6px 10px;font-size:.76rem;font-weight:900;background:var(--soft);color:var(--forest);width:max-content;border:1px solid var(--line)}
 
     .sources{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
     .source-card{background:var(--white);border:1px solid var(--line);padding:23px;border-radius:var(--radius-s);min-height:190px;display:flex;flex-direction:column}
-    .source-card:nth-child(3n+1){background:var(--green-soft);border-color:var(--green-soft)}
+    .source-card:nth-child(3n+1){background:var(--green-soft);border-color:#a9d68d}
     .source-card h3{font-size:1.05rem;margin:0 0 8px;letter-spacing:-.02em}
     .source-card p{font-size:.9rem;color:var(--muted);margin:0 0 16px}
     .source-card a{font-weight:850;margin-top:auto;width:max-content}
     .source-card small{display:block;margin-top:10px;color:#536a53}
     .method{margin-top:18px;background:var(--forest);color:#fff;border-radius:var(--radius-l);padding:28px}
     .method h3{margin-top:0;font-size:1.6rem;letter-spacing:-.03em}
-    .method p{margin-bottom:8px;color:#e2ebdf;max-width:1000px}
+    .method p{margin-bottom:8px;color:#edf3eb;max-width:1000px}
 
-    footer{background:var(--forest);color:#dfeadd;padding:30px}
+    footer{background:var(--forest);color:#e9f0e7;padding:30px}
     .foot{max-width:var(--max);margin:auto;display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap}
-    .foot a{color:var(--green);font-weight:800}
+    .foot a{color:var(--green);font-weight:850}
 
-    .hc{--cream:#000;--white:#000;--ink:#fff;--muted:#f1f1f1;--line:#fff;--forest:#000;--forest-2:#000;--green:#f7ff00;--green-soft:#111;--blue:#111;--pink:#111;--orange:#111;--lilac:#111;--teal:#111}
-    .hc header,.hc footer,.hc .method{background:#000}.hc .hero-card,.hc .metric:nth-child(1),.hc .callout{background:#f7ff00;color:#000}.hc .hero-card p,.hc .hero-card small,.hc .metric:nth-child(1) p,.hc .metric:nth-child(1) small,.hc .callout strong{color:#000}.hc .metric,.hc .card,.hc .source-card,.hc .insight{border:2px solid #fff}.hc .tabs{background:#111}.hc .tab{color:#fff}.hc .tab[aria-selected="true"]{background:#f7ff00;color:#000}.hc .track,.hc .compare>div,.hc .mini{background:#222}.hc a{color:#f7ff00}.hc .source-card a{color:#fff}.large-text{font-size:118%}
+    .hc{--cream:#000;--white:#000;--ink:#fff;--muted:#fff;--line:#fff;--forest:#000;--forest-2:#000;--green:#f7ff00;--green-soft:#111;--soft:#111}
+    .hc header,.hc footer,.hc .method{background:#000}.hc header:after{display:none}.hc .hero-card,.hc .metric:nth-child(1),.hc .callout{background:#f7ff00;color:#000;border-color:#fff}.hc .hero-card p,.hc .hero-card small,.hc .metric:nth-child(1) p,.hc .metric:nth-child(1) small,.hc .callout strong{color:#000}.hc .metric,.hc .card,.hc .source-card,.hc .insight{background:#000;border:2px solid #fff}.hc .tabs{background:#111;border:1px solid #fff}.hc .tab{color:#fff}.hc .tab[aria-selected="true"]{background:#f7ff00;color:#000}.hc .track,.hc .compare>div,.hc .mini{background:#222;border-color:#fff}.hc a{color:#f7ff00}.hc .source-card a{color:#fff}.large-text{font-size:118%}
 
     @media(max-width:1050px){
       .top{align-items:flex-start;flex-direction:column}.nav{justify-content:flex-start}.hero{grid-template-columns:1fr}.hero-card{min-height:240px}.metric-grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.insight-grid{grid-template-columns:repeat(2,1fr)}.sources{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:1fr}
     }
+
     @media(max-width:680px){
-      .top,.hero,main{padding-left:16px;padding-right:16px}.top{padding-top:18px}.brand{min-width:0}.brand p{font-size:.86rem}.nav{gap:2px}.nav a,.nav button{padding:8px 10px;font-size:.88rem}.hero{padding-top:28px;padding-bottom:34px}.hero h2{font-size:clamp(2.6rem,15vw,4.4rem)}.metric-grid,.insight-grid,.sources{grid-template-columns:1fr}.metric{min-height:180px}.section-title{align-items:flex-start;flex-direction:column;margin-top:42px}.tabs{width:100%;border-radius:20px}.tab{flex:1;min-width:120px}.card{padding:22px;border-radius:22px}.compare,.mini-grid{grid-template-columns:1fr}.barrow{grid-template-columns:95px 1fr 46px;gap:7px}.hero-card{border-radius:22px}.metric .value{font-size:3.6rem}.section-title h2{font-size:2.5rem}
+      header:after{display:none}
+      .top,.hero,main{padding-left:16px;padding-right:16px}
+      .top{padding-top:18px;padding-bottom:16px;gap:16px}
+      .brand{min-width:0;width:100%;align-items:flex-start}
+      .mark{width:46px;height:46px;border-radius:13px;padding:9px 8px}
+      .brand h1{font-size:1.65rem;line-height:1.08}
+      .brand p{font-size:.88rem;line-height:1.35;max-width:280px}
+
+      .nav{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:8px;justify-content:stretch}
+      .nav a,.nav button{width:100%;min-height:46px;padding:10px 8px;font-size:.9rem;text-align:center;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.32)}
+      .nav .cta{grid-column:1/-1;background:var(--green);color:var(--forest);font-weight:850}
+
+      .hero{padding-top:24px;padding-bottom:30px;gap:20px}
+      .hero-copy{padding:0}
+      .hero h2{font-size:clamp(2.7rem,13.5vw,4rem);line-height:.95;margin:14px 0 18px;letter-spacing:-.055em}
+      .hero-copy>p{font-size:1.05rem;line-height:1.55;color:#edf3eb}
+      .kicker{font-size:.78rem}
+      .hero-card{min-height:auto;padding:22px;border-radius:20px}
+      .hero-card .hero-number{font-size:4.25rem;margin:18px 0 8px}
+      .hero-card:after{width:150px;height:150px;border-width:20px;right:-48px;bottom:-54px}
+
+      main{padding-top:28px;padding-bottom:50px}
+      .section-title{align-items:flex-start;flex-direction:column;margin-top:38px;margin-bottom:14px;gap:12px}
+      .section-title h2{font-size:2.25rem;line-height:1.02}
+      .metric-grid,.insight-grid,.sources{grid-template-columns:1fr}
+      .metric{min-height:175px;padding:20px}
+      .metric .value{font-size:3.5rem}
+      .card{padding:20px;border-radius:20px}
+      .compare,.mini-grid{grid-template-columns:1fr}
+      .tabs{width:100%;display:grid;grid-template-columns:1fr;border-radius:18px;padding:5px}
+      .tab{width:100%;text-align:left;padding:12px 14px}
+      .barrow{grid-template-columns:88px 1fr 50px;gap:8px;font-size:.86rem}
+      .track{height:12px}
+      .method{border-radius:20px;padding:22px}
+      .foot{align-items:flex-start;flex-direction:column}
     }
+
+    @media(max-width:380px){
+      .nav{grid-template-columns:1fr}
+      .nav .cta{grid-column:auto}
+      .hero h2{font-size:2.55rem}
+    }
+
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
   </style>
 </head>
@@ -182,7 +218,7 @@
 
 <main id="main">
   <section id="overview" aria-labelledby="overview-title">
-    <div class="section-title"><div><h2 id="overview-title">The UK at a glance</h2><p>Small cards make the key figures easy to scan. Every number keeps its original geography and time period.</p></div></div>
+    <div class="section-title"><div><h2 id="overview-title">The UK at a glance</h2><p>Key figures with their original geography and time period.</p></div></div>
     <div class="metric-grid">
       <article class="metric"><div class="eyebrow"><span class="dot"></span>Disabled people</div><div class="value">25%</div><p>One in four people were classified as disabled in 2024–25.</p><div class="progress" aria-hidden="true"><i style="width:25%"></i></div><small>Family Resources Survey 2024–25</small></article>
       <article class="metric"><div class="eyebrow"><span class="dot"></span>Number of people</div><div class="value">16.7m</div><p>Up from 12.9 million in 2014–15.</p><div class="progress" aria-hidden="true"><i style="width:70%"></i></div><small>UK · all ages</small></article>
@@ -193,7 +229,7 @@
 
   <section id="deep-dive" aria-labelledby="deep-title">
     <div class="section-title">
-      <div><h2 id="deep-title">Go deeper</h2><p>Large cards hold the more detailed stories, comparisons and sources.</p></div>
+      <div><h2 id="deep-title">Go deeper</h2><p>Detailed comparisons and source-linked evidence.</p></div>
       <div class="tabs" role="tablist" aria-label="Data themes">
         <button class="tab" role="tab" aria-selected="true" aria-controls="prevalence" id="t-prevalence">Who is disabled?</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="employment" id="t-employment">Work & income</button>
@@ -207,8 +243,8 @@
         <p class="lead">Disability becomes more common with age, but prevalence among children and working-age adults has also risen over the last decade.</p>
         <div class="chart" aria-label="Disability prevalence by life stage">
           <div class="barrow"><span>Children</span><div class="track"><div class="fill" style="width:12%"></div></div><strong>12%</strong></div>
-          <div class="barrow"><span>Working age</span><div class="track"><div class="fill green" style="width:23%"></div></div><strong>23%</strong></div>
-          <div class="barrow"><span>Pension age</span><div class="track"><div class="fill purple" style="width:45%"></div></div><strong>45%</strong></div>
+          <div class="barrow"><span>Working age</span><div class="track"><div class="fill" style="width:23%"></div></div><strong>23%</strong></div>
+          <div class="barrow"><span>Pension age</span><div class="track"><div class="fill" style="width:45%"></div></div><strong>45%</strong></div>
         </div>
         <div class="callout"><strong>Long-term change:</strong> working-age prevalence rose from 17% in 2014–15 to 23% in 2024–25.</div>
         <p class="source">Source: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a></p>
@@ -219,10 +255,10 @@
         <p class="lead">Regional differences partly reflect age and other demographic differences.</p>
         <div class="chart">
           <div class="barrow"><span>Scotland</span><div class="track"><div class="fill" style="width:30%"></div></div><strong>30%</strong></div>
-          <div class="barrow"><span>Wales</span><div class="track"><div class="fill green" style="width:26%"></div></div><strong>26%</strong></div>
-          <div class="barrow"><span>UK</span><div class="track"><div class="fill purple" style="width:25%"></div></div><strong>25%</strong></div>
-          <div class="barrow"><span>N. Ireland</span><div class="track"><div class="fill amber" style="width:22%"></div></div><strong>22%</strong></div>
-          <div class="barrow"><span>London</span><div class="track"><div class="fill pink" style="width:17%"></div></div><strong>17%</strong></div>
+          <div class="barrow"><span>Wales</span><div class="track"><div class="fill" style="width:26%"></div></div><strong>26%</strong></div>
+          <div class="barrow"><span>UK</span><div class="track"><div class="fill" style="width:25%"></div></div><strong>25%</strong></div>
+          <div class="barrow"><span>N. Ireland</span><div class="track"><div class="fill" style="width:22%"></div></div><strong>22%</strong></div>
+          <div class="barrow"><span>London</span><div class="track"><div class="fill" style="width:17%"></div></div><strong>17%</strong></div>
         </div>
         <div class="mini-grid">
           <div class="mini"><span>Disabled females</span><strong>27%</strong><span>9.2 million</span></div>
@@ -250,8 +286,8 @@
         <p class="lead">The national gap hides bigger inequalities for some groups.</p>
         <div class="chart">
           <div class="barrow"><span>Age 18–24</span><div class="track"><div class="fill" style="width:42.2%"></div></div><strong>21.1pp</strong></div>
-          <div class="barrow"><span>Age 50–64</span><div class="track"><div class="fill purple" style="width:65%"></div></div><strong>32.5pp</strong></div>
-          <div class="barrow"><span>Social housing</span><div class="track"><div class="fill pink" style="width:85%"></div></div><strong>42.5pp</strong></div>
+          <div class="barrow"><span>Age 50–64</span><div class="track"><div class="fill" style="width:65%"></div></div><strong>32.5pp</strong></div>
+          <div class="barrow"><span>Social housing</span><div class="track"><div class="fill" style="width:85%"></div></div><strong>42.5pp</strong></div>
         </div>
         <div class="compare"><div><span>Disabled underemployment</span><div class="big">10.0%</div></div><div><span>Non-disabled underemployment</span><div class="big">7.7%</div></div></div>
         <p class="source">Source: <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">DWP / Labour Force Survey and Annual Population Survey ↗</a></p>
@@ -281,7 +317,7 @@
   </section>
 
   <section id="everyday" aria-labelledby="everyday-title">
-    <div class="section-title"><div><h2 id="everyday-title">Everyday inequality</h2><p>Colour-coded small cards show where disability intersects with work, money and daily life.</p></div></div>
+    <div class="section-title"><div><h2 id="everyday-title">Everyday inequality</h2><p>Each card is labelled in text so meaning never depends on colour alone.</p></div></div>
     <div class="insight-grid">
       <article class="insight food"><span class="tag">Food security</span><b>6% vs 2%</b><p>Households with a disabled adult were three times as likely to have used a food bank as households with no disabled adults in FYE 2024.</p></article>
       <article class="insight work"><span class="tag">Work</span><b>29.7 pp</b><p>The disability employment gap in April–June 2025, with the disabled employment rate at 52.8%.</p></article>
@@ -291,9 +327,9 @@
 
     <div class="section-title"><div><h2>Reported impairment types</h2><p>The most common reported types differ sharply by age.</p></div></div>
     <div class="three panel active">
-      <article class="card"><h3>Disabled children</h3><div class="barrow"><span>Social / behavioural</span><div class="track"><div class="fill" style="width:61%"></div></div><strong>61%</strong></div><div class="barrow"><span>Learning</span><div class="track"><div class="fill green" style="width:32%"></div></div><strong>32%</strong></div><div class="barrow"><span>Mental health</span><div class="track"><div class="fill purple" style="width:26%"></div></div><strong>26%</strong></div></article>
-      <article class="card"><h3>Working-age disabled adults</h3><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:46%"></div></div><strong>46%</strong></div><div class="barrow"><span>Mobility</span><div class="track"><div class="fill green" style="width:40%"></div></div><strong>40%</strong></div><div class="barrow"><span>Stamina / fatigue</span><div class="track"><div class="fill purple" style="width:33%"></div></div><strong>33%</strong></div></article>
-      <article class="card"><h3>Disabled pensioners</h3><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:68%"></div></div><strong>68%</strong></div><div class="barrow"><span>Stamina / fatigue</span><div class="track"><div class="fill green" style="width:45%"></div></div><strong>45%</strong></div><div class="barrow"><span>Dexterity</span><div class="track"><div class="fill purple" style="width:34%"></div></div><strong>34%</strong></div></article>
+      <article class="card"><h3>Disabled children</h3><div class="barrow"><span>Social / behavioural</span><div class="track"><div class="fill" style="width:61%"></div></div><strong>61%</strong></div><div class="barrow"><span>Learning</span><div class="track"><div class="fill" style="width:32%"></div></div><strong>32%</strong></div><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:26%"></div></div><strong>26%</strong></div></article>
+      <article class="card"><h3>Working-age disabled adults</h3><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:46%"></div></div><strong>46%</strong></div><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:40%"></div></div><strong>40%</strong></div><div class="barrow"><span>Stamina / fatigue</span><div class="track"><div class="fill" style="width:33%"></div></div><strong>33%</strong></div></article>
+      <article class="card"><h3>Disabled pensioners</h3><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:68%"></div></div><strong>68%</strong></div><div class="barrow"><span>Stamina / fatigue</span><div class="track"><div class="fill" style="width:45%"></div></div><strong>45%</strong></div><div class="barrow"><span>Dexterity</span><div class="track"><div class="fill" style="width:34%"></div></div><strong>34%</strong></div></article>
     </div>
     <p class="source">Impairment-type source: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a>. Food-bank source: <a href="https://www.gov.uk/government/statistics/united-kingdom-food-security-digest-2025/united-kingdom-food-security-digest-2025" target="_blank" rel="noopener">UK Food Security Digest 2025 ↗</a>.</p>
   </section>
