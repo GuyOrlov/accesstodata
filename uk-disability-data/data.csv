@@ -1,0 +1,30 @@
+theme,measure,value,unit,geography,period,source_url
+Prevalence,Disabled people,16.7,million,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Prevalence,Disabled people,25,percent,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Prevalence,Disabled children,12,percent,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Prevalence,Disabled working-age adults,23,percent,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Prevalence,Disabled pension-age adults,45,percent,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Prevalence,Disabled females,27,percent,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Prevalence,Disabled males,22,percent,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Region,Disabled people Scotland,30,percent,Scotland,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Region,Disabled people Wales,26,percent,Wales,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Region,Disabled people Northern Ireland,22,percent,Northern Ireland,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Region,Disabled people London,17,percent,London,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Employment,Disabled employment rate,52.8,percent,UK age 16-64,Apr-Jun 2025,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Employment,Non-disabled employment rate,82.5,percent,UK age 16-64,Apr-Jun 2025,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Employment,Disabled people in employment,5.5,million,UK age 16-64,Apr-Jun 2025,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Employment,Disability employment gap,29.7,percentage points,UK age 16-64,Apr-Jun 2025,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Employment,Employment gap age 18-24,21.1,percentage points,UK,2024-25,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Employment,Employment gap age 50-64,32.5,percentage points,UK,2024-25,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Employment,Employment gap social housing,42.5,percentage points,UK,2024-25,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Employment,Disabled underemployment rate,10.0,percent,UK,Apr-Jun 2025,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Employment,Non-disabled underemployment rate,7.7,percent,UK,Apr-Jun 2025,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Benefits,PIP caseload,4.0,million,England and Wales,30 Apr 2026,https://www.gov.uk/government/statistics/personal-independence-payment-statistics-to-april-2026/personal-independence-payment-official-statistics-to-april-2026
+Benefits,PIP working-age caseload,3.3,million,England and Wales,30 Apr 2026,https://www.gov.uk/government/statistics/personal-independence-payment-statistics-to-april-2026/personal-independence-payment-official-statistics-to-april-2026
+Benefits,PIP State Pension age caseload,0.68,million,England and Wales,30 Apr 2026,https://www.gov.uk/government/statistics/personal-independence-payment-statistics-to-april-2026/personal-independence-payment-official-statistics-to-april-2026
+Benefits,Disabled people claiming sickness or disability benefit,37.9,percent,UK linked data,2023-24,https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025
+Food security,Households with a disabled adult using food bank,6,percent,UK,FYE 2024,https://www.gov.uk/government/statistics/united-kingdom-food-security-digest-2025/united-kingdom-food-security-digest-2025
+Food security,Households with no disabled adult using food bank,2,percent,UK,FYE 2024,https://www.gov.uk/government/statistics/united-kingdom-food-security-digest-2025/united-kingdom-food-security-digest-2025
+Impairment,Disabled children social or behavioural,61,percent,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Impairment,Working-age disabled adults mental health,46,percent,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
+Impairment,Disabled pensioners mobility,68,percent,UK,2024-25,https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025
