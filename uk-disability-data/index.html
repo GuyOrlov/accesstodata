@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="UK Disability Data Hub: accessible UK disability statistics covering prevalence, employment, benefits and everyday inequality.">
+  <meta name="description" content="Clear UK disability data on population, employment, benefits and everyday life, with official sources and dates you can check.">
   <meta name="theme-color" content="#163300">
   <title>UK Disability Data Hub | Access to Data</title>
   <style>
@@ -96,7 +96,7 @@
     footer{border-top:1px solid rgba(255,255,255,.18);background:var(--forest-2);padding:28px;color:#e5ede2}.foot{max-width:var(--max);margin:auto;display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap}.foot a{color:var(--green);font-weight:900}
 
     .hc{--forest:#000;--forest-2:#000;--green:#ffff00;--green-soft:#222;--offwhite:#111;--ink:#000;--muted:#222;--line:#000}
-    .hc body,.hc header,.hc footer{background:#000}.hc .metric,.hc .card,.hc .insight,.hc .source-card,.hc .hero-card,.hc .method{background:#fff;color:#000;border-color:#000}.hc .section-title h2,.hc .section-title p,.hc .hero h2,.hc .hero-copy>p,.hc .brand h1,.hc .brand p{color:#fff}.hc .tab{border-color:#fff;color:#fff}.hc .tab[aria-selected="true"],.hc .nav .cta,.hc .tag,.hc .callout{background:#ffff00;color:#000;border-color:#000}.hc .source a,.hc .source-card a{color:#000}.large-text{font-size:118%}
+    .hc body,.hc header,.hc footer{background:#000}.hc .metric,.hc .card,.hc .insight,.hc .source-card,.hc .hero-card,.hc .method{background:#fff;color:#000;border-color:#000}.hc .section-title h2,.hc .section-title p,.hc .hero h2,.hc .hero-copy>p,.hc .brand h1,.hc .brand p{color:#fff}.hc .tab{border-color:#fff;color:#fff}.hc .tab[aria-selected="true"],.hc .nav .cta,.hc .tag,.hc .callout{background:#ffff00;color:#000;border-color:#000}.hc .source a,.hc .source-card a{color:#000}.hc .compare>div,.hc .mini{background:#fff;border-color:#000}.hc .compare span,.hc .mini span,.hc .compare .big,.hc .mini strong{color:#000}.hc .progress{background:#ffff00;border-color:#000}.hc .progress i{background:#000}.large-text{font-size:118%}
 
     @media(max-width:1050px){
       .top{align-items:flex-start;flex-direction:column}.nav{justify-content:flex-start}.hero{grid-template-columns:1fr}.hero-card{min-height:245px}.metric-grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.insight-grid{grid-template-columns:repeat(2,1fr)}.sources{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:1fr}
@@ -125,26 +125,26 @@
   <div class="top">
     <div class="brand">
       <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      <div><h1>UK Disability Data Hub</h1><p>Access to Data · official statistics made clearer</p></div>
+      <div><h1>UK Disability Data Hub</h1><p>Access to Data · UK disability data explained clearly</p></div>
     </div>
     <nav class="nav" aria-label="Primary">
       <a href="#overview">Overview</a>
-      <a href="#deep-dive">Deep dive</a>
+      <a href="#deep-dive">Explore data</a>
       <a href="#everyday">Everyday life</a>
       <a href="#sources">Sources</a>
       <button id="textBtn" type="button" aria-pressed="false">Larger text</button>
       <button id="contrastBtn" type="button" aria-pressed="false">High contrast</button>
-      <button class="cta" id="downloadBtn" type="button">Download data</button>
+      <a class="cta" href="data.csv" download>Download data</a>
     </nav>
   </div>
 
   <div class="hero">
     <div class="hero-copy">
       <span class="kicker">UK disability in numbers</span>
-      <h2>Better data.<br>Fairer opportunities.</h2>
-      <p>Explore disability, work, benefits and everyday inequality through official UK statistics — brought together in one accessible place.</p>
+      <h2>UK disability data,<br>explained clearly.</h2>
+      <p>Explore disability, work, benefits and everyday life through official UK statistics, brought together in one accessible place.</p>
     </div>
-    <aside class="hero-card" aria-label="Headline disability prevalence">
+    <aside class="hero-card" aria-label="Headline disability figure">
       <div><span class="label">Disabled people in the UK</span><div class="hero-number">25%</div><p>One in four people were classified as disabled in 2024–25.</p></div>
       <small>Family Resources Survey 2024–25 · UK</small>
     </aside>
@@ -153,82 +153,101 @@
 
 <main id="main">
   <section id="overview" aria-labelledby="overview-title">
-    <div class="section-title"><div><h2 id="overview-title">The UK at a glance</h2><p>Headline figures shown on white cards for clear reading and strong contrast.</p></div></div>
+    <div class="section-title"><div><h2 id="overview-title">The UK at a glance</h2><p>Key figures, with the source, date and area shown.</p></div></div>
     <div class="metric-grid">
-      <article class="metric"><div class="eyebrow"><span class="dot"></span>Disabled people</div><div class="value">25%</div><p>One in four people were classified as disabled in 2024–25.</p><div class="progress" aria-hidden="true"><i style="width:25%"></i></div><small>Family Resources Survey 2024–25</small></article>
-      <article class="metric"><div class="eyebrow"><span class="dot"></span>Number of people</div><div class="value">16.7m</div><p>Up from 12.9 million in 2014–15.</p><div class="progress" aria-hidden="true"><i style="width:70%"></i></div><small>UK · all ages</small></article>
-      <article class="metric"><div class="eyebrow"><span class="dot"></span>Employment gap</div><div class="value">29.7 <span class="unit-words">percentage points</span></div><p>Difference between disabled and non-disabled employment rates.</p><div class="progress" aria-hidden="true"><i style="width:59%"></i></div><small>UK · age 16–64 · Apr–Jun 2025</small></article>
-      <article class="metric"><div class="eyebrow"><span class="dot"></span>PIP caseload</div><div class="value">4.0m</div><p>Claimants entitled to PIP in England and Wales.</p><div class="progress" aria-hidden="true"><i style="width:80%"></i></div><small>30 April 2026</small></article>
+      <article class="metric"><div class="eyebrow"><span class="dot"></span>Disabled people</div><div class="value">25%</div><p>One in four people were classed as disabled in 2024–25.</p><small>Family Resources Survey 2024–25 · UK</small></article>
+      <article class="metric"><div class="eyebrow"><span class="dot"></span>Disabled people in the UK</div><div class="value">16.7 <span class="unit-words">million people</span></div><p>Up from 12.9 million in 2014–15.</p><small>Family Resources Survey 2024–25 · UK</small></article>
+      <article class="metric"><div class="eyebrow"><span class="dot"></span>Disability employment gap</div><div class="value">29.7 <span class="unit-words">percentage points</span></div><p>The difference between disabled and non-disabled employment rates.</p><small>UK · age 16–64 · Apr–Jun 2025</small></article>
+      <article class="metric"><div class="eyebrow"><span class="dot"></span>People receiving PIP</div><div class="value">4.1 <span class="unit-words">million people</span></div><p>People entitled to Personal Independence Payment (PIP) in England and Wales.</p><small>As at 31 July 2026</small></article>
     </div>
   </section>
 
   <section id="deep-dive" aria-labelledby="deep-title">
     <div class="section-title">
-      <div><h2 id="deep-title">Go deeper</h2><p>Use the tabs to explore prevalence, employment, income and benefits.</p></div>
+      <div><h2 id="deep-title">Explore the data</h2><p>Choose a topic to see the figures in more detail.</p></div>
       <div class="tabs" role="tablist" aria-label="Data themes">
-        <button class="tab" role="tab" aria-selected="true" aria-controls="prevalence" id="t-prevalence">Who is disabled?</button>
+        <button class="tab" role="tab" aria-selected="true" aria-controls="prevalence" id="t-prevalence">Disability in the UK</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="employment" id="t-employment">Work & income</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="support" id="t-support">Benefits & support</button>
       </div>
     </div>
 
     <div id="prevalence" class="panel active two" role="tabpanel" aria-labelledby="t-prevalence">
-      <article class="card"><h3>Disability prevalence by life stage</h3><p class="lead">Disability becomes more common with age, but prevalence among children and working-age adults has also risen over the last decade.</p><div class="chart"><div class="barrow"><span>Children</span><div class="track"><div class="fill" style="width:12%"></div></div><strong>12%</strong></div><div class="barrow"><span>Working age</span><div class="track"><div class="fill" style="width:23%"></div></div><strong>23%</strong></div><div class="barrow"><span>Pension age</span><div class="track"><div class="fill" style="width:45%"></div></div><strong>45%</strong></div></div><div class="callout"><strong>Long-term change:</strong> working-age prevalence rose from 17% in 2014–15 to 23% in 2024–25.</div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a></p></article>
-      <article class="card"><h3>Where prevalence is highest</h3><p class="lead">Regional differences partly reflect age and other demographic differences.</p><div class="chart"><div class="barrow"><span>Scotland</span><div class="track"><div class="fill" style="width:30%"></div></div><strong>30%</strong></div><div class="barrow"><span>Wales</span><div class="track"><div class="fill" style="width:26%"></div></div><strong>26%</strong></div><div class="barrow"><span>UK</span><div class="track"><div class="fill" style="width:25%"></div></div><strong>25%</strong></div><div class="barrow"><span>N. Ireland</span><div class="track"><div class="fill" style="width:22%"></div></div><strong>22%</strong></div><div class="barrow"><span>London</span><div class="track"><div class="fill" style="width:17%"></div></div><strong>17%</strong></div></div><div class="mini-grid"><div class="mini"><span>Disabled females</span><strong>27%</strong><span>9.2 million</span></div><div class="mini"><span>Disabled males</span><strong>22%</strong><span>7.5 million</span></div><div class="mini"><span>UK total</span><strong>16.7m</strong><span>2024–25</span></div></div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a></p></article>
+      <article class="card"><h3>Share of people who are disabled by age</h3><p class="lead">The share of people classed as disabled is higher in older age groups. It has also risen among children and working-age adults over the last decade.</p><div class="chart"><div class="barrow"><span>Children</span><div class="track"><div class="fill" style="width:12%"></div></div><strong>12%</strong></div><div class="barrow"><span>Working age</span><div class="track"><div class="fill" style="width:23%"></div></div><strong>23%</strong></div><div class="barrow"><span>Pension age</span><div class="track"><div class="fill" style="width:45%"></div></div><strong>45%</strong></div></div><div class="callout"><strong>Long-term change:</strong> working-age prevalence rose from 17% in 2014–15 to 23% in 2024–25.</div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a></p></article>
+      <article class="card"><h3>How the share varies by area</h3><p class="lead">The percentage of people classed as disabled varies across the UK. Differences in age and other population characteristics may explain part of this.</p><div class="chart"><div class="barrow"><span>Scotland</span><div class="track"><div class="fill" style="width:30%"></div></div><strong>30%</strong></div><div class="barrow"><span>Wales</span><div class="track"><div class="fill" style="width:26%"></div></div><strong>26%</strong></div><div class="barrow"><span>UK</span><div class="track"><div class="fill" style="width:25%"></div></div><strong>25%</strong></div><div class="barrow"><span>N. Ireland</span><div class="track"><div class="fill" style="width:22%"></div></div><strong>22%</strong></div><div class="barrow"><span>London</span><div class="track"><div class="fill" style="width:17%"></div></div><strong>17%</strong></div></div><div class="mini-grid"><div class="mini"><span>Disabled females</span><strong>27%</strong><span>9.2 million</span></div><div class="mini"><span>Disabled males</span><strong>22%</strong><span>7.5 million</span></div><div class="mini"><span>UK total</span><strong>16.7 million</strong><span>2024–25</span></div></div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a></p></article>
     </div>
 
     <div id="employment" class="panel two" role="tabpanel" aria-labelledby="t-employment">
-      <article class="card"><h3>Employment rates</h3><p class="lead">Disabled people remain substantially less likely to be in employment.</p><div class="compare"><div><span>Disabled employment rate</span><div class="big">52.8%</div><div class="progress"><i style="width:52.8%"></i></div></div><div><span>Non-disabled employment rate</span><div class="big">82.5%</div><div class="progress"><i style="width:82.5%"></i></div></div></div><div class="callout"><strong>5.5 million</strong> disabled people aged 16–64 were in employment in April–June 2025.</div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">DWP, The employment of disabled people 2025 ↗</a></p></article>
-      <article class="card"><h3>Where the gaps become wider</h3><p class="lead">The national gap hides bigger inequalities for some groups.</p><div class="chart"><div class="barrow"><span>Age 18–24</span><div class="track"><div class="fill" style="width:42.2%"></div></div><strong>21.1<small>percentage points</small></strong></div><div class="barrow"><span>Age 50–64</span><div class="track"><div class="fill" style="width:65%"></div></div><strong>32.5<small>percentage points</small></strong></div><div class="barrow"><span>Social housing</span><div class="track"><div class="fill" style="width:85%"></div></div><strong>42.5<small>percentage points</small></strong></div></div><div class="compare"><div><span>Disabled underemployment</span><div class="big">10.0%</div></div><div><span>Non-disabled underemployment</span><div class="big">7.7%</div></div></div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">DWP / Labour Force Survey and Annual Population Survey ↗</a></p></article>
+      <article class="card"><h3>Employment rates</h3><p class="lead">The employment rate is lower for disabled people than for non-disabled people.</p><div class="compare"><div><span>Disabled employment rate</span><div class="big">52.8%</div><div class="progress"><i style="width:52.8%"></i></div></div><div><span>Non-disabled employment rate</span><div class="big">82.5%</div><div class="progress"><i style="width:82.5%"></i></div></div></div><div class="callout"><strong>5.5 million</strong> disabled people aged 16–64 were in employment in April–June 2025.</div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">DWP, The employment of disabled people 2025 ↗</a></p></article>
+      <article class="card"><h3>How the employment gap varies</h3><p class="lead">The size of the employment gap differs by age group and housing situation.</p><div class="chart"><div class="barrow"><span>Age 18–24</span><div class="track"><div class="fill" style="width:42.2%"></div></div><strong>21.1<small>percentage points</small></strong></div><div class="barrow"><span>Age 50–64</span><div class="track"><div class="fill" style="width:65%"></div></div><strong>32.5<small>percentage points</small></strong></div><div class="barrow"><span>Social housing</span><div class="track"><div class="fill" style="width:85%"></div></div><strong>42.5<small>percentage points</small></strong></div></div><div class="compare"><div><span>Disabled underemployment</span><div class="big">10.0%</div></div><div><span>Non-disabled underemployment</span><div class="big">7.7%</div></div></div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">DWP / Labour Force Survey and Annual Population Survey ↗</a></p></article>
     </div>
 
     <div id="support" class="panel two" role="tabpanel" aria-labelledby="t-support">
-      <article class="card"><h3>PIP in England and Wales</h3><p class="lead">Personal Independence Payment helps with some extra costs of long-term disability or ill-health.</p><div class="compare"><div><span>Entitled to PIP</span><div class="big">4.0m</div><span>30 April 2026</span></div><div><span>Working-age claimants</span><div class="big">3.3m</div><span>83% of caseload</span></div></div><div class="callout"><strong>680,000</strong> claimants were of State Pension age; 37% of claimants received the highest level of award.</div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/personal-independence-payment-statistics-to-april-2026/personal-independence-payment-official-statistics-to-april-2026" target="_blank" rel="noopener">DWP PIP official statistics to April 2026 ↗</a></p></article>
-      <article class="card"><h3>Benefit connection</h3><p class="lead">Not every disabled person receives a disability-related benefit.</p><div class="mini-grid"><div class="mini"><span>Claiming sickness / disability benefit</span><strong>37.9%</strong><span>2023–24 linked data</span></div><div class="mini"><span>Claiming another benefit type</span><strong>19.8%</strong><span>2023–24</span></div><div class="mini"><span>Not claiming any benefit</span><strong>42.2%</strong><span>2023–24</span></div></div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">DWP, Employment of disabled people 2025 ↗</a></p></article>
+      <article class="card"><h3>PIP in England and Wales</h3><p class="lead">Personal Independence Payment (PIP) helps with some extra costs caused by long-term disability or ill-health.</p><div class="compare"><div><span>People entitled to PIP</span><div class="big">4.1 million</div><span>31 July 2026</span></div><div><span>Working-age people</span><div class="big">3.4 million</div><span>83% of the total</span></div></div><div class="callout"><strong>690,000</strong> people were of State Pension age; 37% received the highest level of award.</div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/personal-independence-payment-statistics-to-july-2026/personal-independence-payment-statistics-to-july-2026" target="_blank" rel="noopener">DWP PIP statistics to July 2026 ↗</a></p></article>
+      <article class="card"><h3>Benefits and disability</h3><p class="lead">Not every disabled person receives a sickness or disability-related benefit.</p><div class="mini-grid"><div class="mini"><span>Receiving sickness or disability-related benefit</span><strong>37.9%</strong><span>2023–24 linked data</span></div><div class="mini"><span>Receiving another type of benefit</span><strong>19.8%</strong><span>2023–24</span></div><div class="mini"><span>Not receiving a benefit</span><strong>42.2%</strong><span>2023–24</span></div></div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">DWP, Employment of disabled people 2025 ↗</a></p></article>
     </div>
   </section>
 
   <section id="everyday" aria-labelledby="everyday-title">
-    <div class="section-title"><div><h2 id="everyday-title">Everyday inequality</h2><p>Key indicators use the same white-card system so colour is never required to understand the information.</p></div></div>
+    <div class="section-title"><div><h2 id="everyday-title">Everyday life</h2><p>Selected figures on food security, work, health conditions and housing.</p></div></div>
     <div class="insight-grid">
-      <article class="insight"><span class="tag">Food security</span><b>6% vs 2%</b><p>Households with a disabled adult were three times as likely to have used a food bank as households with no disabled adults in FYE 2024.</p></article>
+      <article class="insight"><span class="tag">Food security</span><b>6% vs 2%</b><p>6% of households with a disabled adult used a food bank, compared with 2% of households with no disabled adults in FYE 2024.</p></article>
       <article class="insight"><span class="tag">Work</span><b>29.7 <span class="unit-words">percentage points</span></b><p>The disability employment gap in April–June 2025, with the disabled employment rate at 52.8%.</p></article>
       <article class="insight"><span class="tag">Health conditions</span><b>30.5%</b><p>Employment rate for disabled people reporting five or more health conditions in 2024–25.</p></article>
-      <article class="insight"><span class="tag">Housing</span><b>42.5 <span class="unit-words">percentage points</span></b><p>Employment gap between disabled and non-disabled people living in social housing.</p></article>
+      <article class="insight"><span class="tag">Housing</span><b>42.5 <span class="unit-words">percentage points</span></b><p>The employment gap for people living in social housing.</p></article>
     </div>
 
-    <div class="section-title"><div><h2>Reported impairment types</h2><p>The most common reported types differ sharply by age.</p></div></div>
+    <div class="section-title"><div><h2>Commonly reported impairment types</h2><p>The most commonly reported impairment types differ by age group.</p></div></div>
     <div class="three panel active">
-      <article class="card"><h3>Disabled children</h3><div class="barrow"><span>Social / behavioural</span><div class="track"><div class="fill" style="width:61%"></div></div><strong>61%</strong></div><div class="barrow"><span>Learning</span><div class="track"><div class="fill" style="width:32%"></div></div><strong>32%</strong></div><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:26%"></div></div><strong>26%</strong></div></article>
-      <article class="card"><h3>Working-age disabled adults</h3><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:46%"></div></div><strong>46%</strong></div><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:40%"></div></div><strong>40%</strong></div><div class="barrow"><span>Stamina / fatigue</span><div class="track"><div class="fill" style="width:33%"></div></div><strong>33%</strong></div></article>
-      <article class="card"><h3>Disabled pensioners</h3><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:68%"></div></div><strong>68%</strong></div><div class="barrow"><span>Stamina / fatigue</span><div class="track"><div class="fill" style="width:45%"></div></div><strong>45%</strong></div><div class="barrow"><span>Dexterity</span><div class="track"><div class="fill" style="width:34%"></div></div><strong>34%</strong></div></article>
+      <article class="card"><h3>Disabled children</h3><div class="barrow"><span>Social or behavioural</span><div class="track"><div class="fill" style="width:61%"></div></div><strong>61%</strong></div><div class="barrow"><span>Learning</span><div class="track"><div class="fill" style="width:32%"></div></div><strong>32%</strong></div><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:26%"></div></div><strong>26%</strong></div></article>
+      <article class="card"><h3>Working-age disabled adults</h3><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:46%"></div></div><strong>46%</strong></div><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:40%"></div></div><strong>40%</strong></div><div class="barrow"><span>Stamina, breathing or fatigue</span><div class="track"><div class="fill" style="width:33%"></div></div><strong>33%</strong></div></article>
+      <article class="card"><h3>Disabled pensioners</h3><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:68%"></div></div><strong>68%</strong></div><div class="barrow"><span>Stamina, breathing or fatigue</span><div class="track"><div class="fill" style="width:45%"></div></div><strong>45%</strong></div><div class="barrow"><span>Dexterity</span><div class="track"><div class="fill" style="width:34%"></div></div><strong>34%</strong></div></article>
     </div>
     <p class="source" style="color:#dce7d8;border-color:rgba(255,255,255,.2)">Impairment-type source: <a style="color:var(--green)" href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a>. Food-bank source: <a style="color:var(--green)" href="https://www.gov.uk/government/statistics/united-kingdom-food-security-digest-2025/united-kingdom-food-security-digest-2025" target="_blank" rel="noopener">UK Food Security Digest 2025 ↗</a>.</p>
   </section>
 
   <section id="sources" aria-labelledby="sources-title">
-    <div class="section-title"><div><h2 id="sources-title">Source library</h2><p>Open the official releases and datasets directly.</p></div></div>
+    <div class="section-title"><div><h2 id="sources-title">Sources</h2><p>Check the official publications and datasets behind the figures.</p></div></div>
     <div class="sources">
       <article class="source-card"><h3>Family Resources Survey 2024–25</h3><p>UK disability prevalence, age, gender, region and impairment types.</p><a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">Open release ↗</a><small>DWP · published 26 March 2026</small></article>
       <article class="source-card"><h3>Employment of disabled people 2025</h3><p>Employment rates, gaps, age, housing, health conditions and underemployment.</p><a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">Open report ↗</a><small>DWP · updated 24 March 2026</small></article>
       <article class="source-card"><h3>ONS A08 labour market dataset</h3><p>Quarterly UK labour-market status of disabled people from the Labour Force Survey.</p><a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/labourmarketstatusofdisabledpeoplea08/current" target="_blank" rel="noopener">Open dataset ↗</a><small>ONS · latest release 18 August 2026</small></article>
-      <article class="source-card"><h3>PIP official statistics</h3><p>Caseloads, registrations, decisions and awards for England and Wales.</p><a href="https://www.gov.uk/government/collections/personal-independence-payment-statistics" target="_blank" rel="noopener">Open collection ↗</a><small>DWP · quarterly</small></article>
+      <article class="source-card"><h3>PIP official statistics</h3><p>People with entitlement to PIP, new claims, decisions and awards in England and Wales.</p><a href="https://www.gov.uk/government/statistics/personal-independence-payment-statistics-to-july-2026" target="_blank" rel="noopener">Open latest release ↗</a><small>DWP · published 15 September 2026</small></article>
       <article class="source-card"><h3>UK Food Security Digest 2025</h3><p>Food-bank use by disability and other household characteristics.</p><a href="https://www.gov.uk/government/statistics/united-kingdom-food-security-digest-2025/united-kingdom-food-security-digest-2025" target="_blank" rel="noopener">Open statistics ↗</a><small>DEFRA / DWP sources</small></article>
       <article class="source-card"><h3>National Data Library</h3><p>Search reusable UK public datasets, including employment and disability pay-gap data.</p><a href="https://www.data.gov.uk/" target="_blank" rel="noopener">Explore data.gov.uk ↗</a><small>UK public-sector open data</small></article>
     </div>
-    <div class="method"><h3>Methodology matters</h3><p><strong>“Disabled” is not measured identically in every dataset.</strong> The Family Resources Survey uses the core Equality Act 2010 definition: a physical or mental impairment with a substantial and long-term negative effect on normal daily activities. Labour-market publications use survey classifications aligned to the Equality Act definition.</p><p>Figures keep their original geographic and time coverage. For example, the PIP figure is England and Wales while Family Resources Survey headline prevalence is UK-wide.</p></div>
+    <div class="method"><h3>How to read the data</h3><p><strong>Different sources do not always measure disability in exactly the same way.</strong> The Family Resources Survey follows the core Equality Act 2010 definition: a physical or mental impairment with a substantial and long-term negative effect on normal daily activities. Labour-market publications use survey classifications aligned with the Equality Act definition.</p><p>Each figure keeps its original area and time period. For example, the PIP figure covers England and Wales, while the Family Resources Survey headline figure covers the whole UK.</p></div>
   </section>
 </main>
 
-<footer><div class="foot"><div><strong>UK Disability Data Hub</strong> · an Access to Data project<br><small>Official data, clearer design, accessible by default.</small></div><div><a href="#main">Back to top ↑</a></div></div></footer>
+<footer><div class="foot"><div><strong>UK Disability Data Hub</strong> · an Access to Data project<br><small>Official data · clear explanations · accessible presentation</small></div><div><a href="#main">Back to top ↑</a></div></div></footer>
 
 <script>
 const tabs=[...document.querySelectorAll('.tab')];
-tabs.forEach(tab=>tab.addEventListener('click',()=>{tabs.forEach(t=>t.setAttribute('aria-selected','false'));document.querySelectorAll('#deep-dive .panel').forEach(p=>p.classList.remove('active'));tab.setAttribute('aria-selected','true');document.getElementById(tab.getAttribute('aria-controls')).classList.add('active');}));
+function activateTab(tab){
+  tabs.forEach(t=>{t.setAttribute('aria-selected','false');t.setAttribute('tabindex','-1');});
+  document.querySelectorAll('#deep-dive .panel').forEach(p=>p.classList.remove('active'));
+  tab.setAttribute('aria-selected','true');
+  tab.setAttribute('tabindex','0');
+  document.getElementById(tab.getAttribute('aria-controls')).classList.add('active');
+}
+tabs.forEach((tab,index)=>{
+  tab.setAttribute('tabindex',tab.getAttribute('aria-selected')==='true'?'0':'-1');
+  tab.addEventListener('click',()=>activateTab(tab));
+  tab.addEventListener('keydown',event=>{
+    let next=index;
+    if(event.key==='ArrowRight') next=(index+1)%tabs.length;
+    else if(event.key==='ArrowLeft') next=(index-1+tabs.length)%tabs.length;
+    else if(event.key==='Home') next=0;
+    else if(event.key==='End') next=tabs.length-1;
+    else return;
+    event.preventDefault();
+    activateTab(tabs[next]);
+    tabs[next].focus();
+  });
+});
 const contrast=document.getElementById('contrastBtn');contrast.addEventListener('click',()=>{const on=document.body.classList.toggle('hc');contrast.setAttribute('aria-pressed',on);contrast.textContent=on?'Standard contrast':'High contrast';});
-const textBtn=document.getElementById('textBtn');textBtn.addEventListener('click',()=>{const on=document.body.classList.toggle('large-text');textBtn.setAttribute('aria-pressed',on);textBtn.textContent=on?'Standard text':'Larger text';});
-const csv=`Theme,Measure,Value,Unit,Geography,Period,Source\nPrevalence,Disabled people,16.7,million,UK,2024-25,DWP Family Resources Survey\nPrevalence,Disabled people,25,percent,UK,2024-25,DWP Family Resources Survey\nEmployment,Disabled employment rate,52.8,percent,UK age 16-64,Apr-Jun 2025,DWP Employment of disabled people 2025\nEmployment,Non-disabled employment rate,82.5,percent,UK age 16-64,Apr-Jun 2025,DWP Employment of disabled people 2025\nEmployment,Disability employment gap,29.7,percentage points,UK age 16-64,Apr-Jun 2025,DWP Employment of disabled people 2025\nBenefits,PIP caseload,4.0,million,England and Wales,30 Apr 2026,DWP PIP official statistics`;
-document.getElementById('downloadBtn').addEventListener('click',()=>{const blob=new Blob([csv],{type:'text/csv;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='uk-disability-data-hub.csv';document.body.appendChild(a);a.click();URL.revokeObjectURL(a.href);a.remove();});
+const textBtn=document.getElementById('textBtn');textBtn.addEventListener('click',()=>{const on=document.body.classList.toggle('large-text');textBtn.setAttribute('aria-pressed',on);textBtn.textContent=on?'Standard text':'Larger text';});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='uk-disability-data-hub.csv';document.body.appendChild(a);a.click();URL.revokeObjectURL(a.href);a.remove();});
 </script>
 </body>
 </html>
