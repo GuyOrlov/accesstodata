@@ -122,6 +122,13 @@
     .legend-copy strong{display:block;color:var(--ink);font-size:.93rem}.legend-copy small{display:block;color:var(--muted);font-weight:700;margin-top:2px}
     .legend-value{font-weight:900;color:var(--forest);white-space:nowrap}
     .rounding-note{font-size:.78rem;color:var(--muted);margin-top:10px}
+    .donut{position:relative;cursor:default}
+    .donut-tooltip{position:absolute;z-index:20;left:50%;top:0;min-width:190px;max-width:260px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);box-shadow:0 10px 28px rgba(0,0,0,.18);font-size:.8rem;line-height:1.35;font-weight:700;pointer-events:none;opacity:0;visibility:hidden;transform:translate(-50%,-115%);transition:opacity .12s ease}
+    .donut-tooltip.show{opacity:1;visibility:visible}
+    .donut-tooltip strong{display:block;margin-bottom:2px;color:var(--forest);font-size:.88rem}
+    .donut-tooltip span{display:block;color:var(--muted);font-weight:700}
+    .hc .donut-tooltip{background:#fff;color:#000;border-color:#000}
+    .hc .donut-tooltip strong,.hc .donut-tooltip span{color:#000}
     .source{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:22px}.source a{color:var(--link);font-weight:900}
 
     .insight-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.insight{border-radius:var(--radius-sm);padding:22px;min-height:205px;display:flex;flex-direction:column;justify-content:space-between;border-top:7px solid var(--green)}.tag{display:inline-block;background:var(--green-soft);color:var(--forest);border-radius:999px;padding:6px 10px;width:max-content;font-size:.76rem;font-weight:900;border:1px solid var(--green)}.insight b{display:block;font-size:clamp(2.1rem,3.6vw,3.8rem);line-height:.9;letter-spacing:-.06em;margin:18px 0;color:var(--forest)}.insight b .unit-words{font-size:.38em;margin-top:9px}.insight p{margin:0;color:var(--ink);font-weight:700;font-size:.9rem}
@@ -258,8 +265,8 @@
     </div>
 
     <div id="support" class="panel two" role="tabpanel" aria-labelledby="t-support">
-      <article class="card"><h3>PIP in England and Wales</h3><p class="lead">Personal Independence Payment (PIP) helps with some extra costs caused by long-term disability or ill-health.</p><p class="plain-note"><strong>Important:</strong> this is a benefit figure, not the total number of disabled people.</p><div class="donut pip-donut" aria-hidden="true" style="margin:18px auto"><div class="donut-center"><strong>4.1m</strong><span>total</span></div></div><div class="compare"><div><span>People entitled to PIP</span><div class="big">4.1 million</div><span>31 July 2026</span></div><div><span>Working-age people</span><div class="big">3.4 million</div><span>83% of the total</span></div></div><div class="callout"><strong>690,000</strong> people were of State Pension age; 37% received the highest level of award.</div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/personal-independence-payment-statistics-to-july-2026/personal-independence-payment-statistics-to-july-2026" target="_blank" rel="noopener">DWP PIP statistics to July 2026 ↗</a></p></article>
-      <article class="card"><h3>Benefits and disability</h3><p class="lead">Not every disabled person receives a sickness or disability-related benefit.</p><div class="donut benefit-donut" aria-hidden="true" style="margin:18px auto"><div class="donut-center"><strong>100%</strong><span>of group</span></div></div><p class="rounding-note">Figures add to 99.9% because of rounding.</p><div class="mini-grid"><div class="mini"><span>Receiving sickness or disability-related benefit</span><strong>37.9%</strong><span>2023–24 linked data</span></div><div class="mini"><span>Receiving another type of benefit</span><strong>19.8%</strong><span>2023–24</span></div><div class="mini"><span>Not receiving a benefit</span><strong>42.2%</strong><span>2023–24</span></div></div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">DWP, Employment of disabled people 2025 ↗</a></p></article>
+      <article class="card"><h3>PIP in England and Wales</h3><p class="lead">Personal Independence Payment (PIP) helps with some extra costs caused by long-term disability or ill-health.</p><p class="plain-note"><strong>Important:</strong> this is a benefit figure, not the total number of disabled people.</p><div class="donut pip-donut" tabindex="0" role="img" aria-label="PIP entitlement: 83% working-age people and 17% State Pension age people" data-donut="pip" style="margin:18px auto"><div class="donut-center"><strong>4.1m</strong><span>total</span></div><div class="donut-tooltip" role="tooltip" aria-hidden="true"></div></div><div class="compare"><div><span>People entitled to PIP</span><div class="big">4.1 million</div><span>31 July 2026</span></div><div><span>Working-age people</span><div class="big">3.4 million</div><span>83% of the total</span></div></div><div class="callout"><strong>690,000</strong> people were of State Pension age; 37% received the highest level of award.</div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/personal-independence-payment-statistics-to-july-2026/personal-independence-payment-statistics-to-july-2026" target="_blank" rel="noopener">DWP PIP statistics to July 2026 ↗</a></p></article>
+      <article class="card"><h3>Benefits and disability</h3><p class="lead">Not every disabled person receives a sickness or disability-related benefit.</p><div class="donut benefit-donut" tabindex="0" role="img" aria-label="Benefits: 37.9% receiving sickness or disability-related benefit, 19.8% receiving another type of benefit, 42.2% not receiving a benefit" data-donut="benefits" style="margin:18px auto"><div class="donut-center"><strong>100%</strong><span>of group</span></div><div class="donut-tooltip" role="tooltip" aria-hidden="true"></div></div><p class="rounding-note">Figures add to 99.9% because of rounding.</p><div class="mini-grid"><div class="mini"><span>Receiving sickness or disability-related benefit</span><strong>37.9%</strong><span>2023–24 linked data</span></div><div class="mini"><span>Receiving another type of benefit</span><strong>19.8%</strong><span>2023–24</span></div><div class="mini"><span>Not receiving a benefit</span><strong>42.2%</strong><span>2023–24</span></div></div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/the-employment-of-disabled-people-2025/the-employment-of-disabled-people-2025" target="_blank" rel="noopener">DWP, Employment of disabled people 2025 ↗</a></p></article>
     </div>
   </section>
 
@@ -320,6 +327,58 @@ tabs.forEach((tab,index)=>{
     activateTab(tabs[next]);
     tabs[next].focus();
   });
+});
+const donutData={
+  pip:[
+    {end:83,label:'Working-age people',value:'3.4 million',share:'83% of PIP total'},
+    {end:100,label:'State Pension age people',value:'690,000',share:'17% of PIP total'}
+  ],
+  benefits:[
+    {end:37.9,label:'Receiving sickness or disability-related benefit',value:'37.9%',share:'2023–24 linked data'},
+    {end:57.7,label:'Receiving another type of benefit',value:'19.8%',share:'2023–24'},
+    {end:100,label:'Not receiving a benefit',value:'42.2%',share:'2023–24'}
+  ]
+};
+function donutSegment(donut,event){
+  const rect=donut.getBoundingClientRect();
+  const x=event.clientX-(rect.left+rect.width/2);
+  const y=event.clientY-(rect.top+rect.height/2);
+  const angle=(Math.atan2(x,-y)*180/Math.PI+360)%360;
+  const percent=angle/3.6;
+  return donutData[donut.dataset.donut].find(item=>percent<=item.end)||donutData[donut.dataset.donut].at(-1);
+}
+function showDonutTooltip(donut,item,event){
+  const tip=donut.querySelector('.donut-tooltip');
+  if(!tip||!item)return;
+  tip.innerHTML='<strong>'+item.label+'</strong><span>'+item.value+' · '+item.share+'</span>';
+  if(event){
+    const rect=donut.getBoundingClientRect();
+    const left=Math.max(20,Math.min(rect.width-20,event.clientX-rect.left));
+    const top=Math.max(8,event.clientY-rect.top-8);
+    tip.style.left=left+'px';
+    tip.style.top=top+'px';
+    tip.style.transform='translate(-50%,-100%)';
+  }
+  tip.classList.add('show');
+  tip.setAttribute('aria-hidden','false');
+}
+function hideDonutTooltip(donut){
+  const tip=donut.querySelector('.donut-tooltip');
+  if(!tip)return;
+  tip.classList.remove('show');
+  tip.setAttribute('aria-hidden','true');
+}
+document.querySelectorAll('.donut[data-donut]').forEach(donut=>{
+  donut.addEventListener('pointermove',event=>showDonutTooltip(donut,donutSegment(donut,event),event));
+  donut.addEventListener('pointerleave',()=>hideDonutTooltip(donut));
+  donut.addEventListener('focus',()=>{
+    const items=donutData[donut.dataset.donut];
+    const summary=donut.dataset.donut==='pip'
+      ? {label:'PIP breakdown',value:'3.4 million working age · 690,000 State Pension age',share:'4.1 million total'}
+      : {label:'Benefits breakdown',value:'37.9% · 19.8% · 42.2%',share:'Figures total 99.9% because of rounding'};
+    showDonutTooltip(donut,summary);
+  });
+  donut.addEventListener('blur',()=>hideDonutTooltip(donut));
 });
 const contrast=document.getElementById('contrastBtn');contrast.addEventListener('click',()=>{const on=document.body.classList.toggle('hc');contrast.setAttribute('aria-pressed',on);contrast.textContent=on?'Standard contrast':'High contrast';});
 const textBtn=document.getElementById('textBtn');textBtn.addEventListener('click',()=>{const on=document.body.classList.toggle('large-text');textBtn.setAttribute('aria-pressed',on);textBtn.textContent=on?'Standard text':'Larger text';});
