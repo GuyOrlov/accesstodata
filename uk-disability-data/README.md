@@ -10,11 +10,11 @@ When GitHub Pages is enabled for this repository, the project page is available 
 
 ## Current data themes
 
-- Disability prevalence and long-term change
+- Share of people classed as disabled and long-term change
 - Age, sex and geographic differences
 - Disability employment rate and employment gap
 - Underemployment and housing-related employment gaps
-- Personal Independence Payment caseload
+- People entitled to Personal Independence Payment (PIP)
 - Benefit receipt
 - Food-bank use
 - Reported impairment types
@@ -66,4 +66,4 @@ The page includes a skip link, keyboard-accessible tabs, high-contrast mode, lar
 
 ## Data notes
 
-Different sources use different populations, periods and geographic coverage. The dashboard keeps those labels visible and does not treat PIP figures as UK-wide. Family Resources Survey prevalence follows the core Equality Act 2010 disability definition used by DWP.
+Different sources use different populations, periods and geographic coverage. The dashboard keeps those labels visible and does not treat PIP figures as UK-wide. Family Resources Survey disability figures follow the core Equality Act 2010 disability definition used by DWP.
