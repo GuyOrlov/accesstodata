@@ -186,6 +186,7 @@
     @media(max-width:680px){.data-meta,.topic-links,.trend-strip,.interpretation-grid{grid-template-columns:1fr}}
 
   </style>
+<link rel="canonical" href="https://accesstodata.co.uk/uk-disability-data/">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
@@ -382,8 +383,10 @@
 <footer><div class="foot"><div><strong>UK Disability Data Hub</strong> · an Access to Data project<br><small>Official data · clear explanations · accessible presentation</small></div><div><a href="#main">Back to top ↑</a></div></div></footer>
 
 <script>
+function trackData(name, detail = {}) { if (typeof window.gtag === 'function') window.gtag('event', name, detail); }
 const tabs=[...document.querySelectorAll('.tab')];
 function activateTab(tab){
+  trackData('data_topic_selected', {topic:tab.getAttribute('aria-controls')});
   tabs.forEach(t=>{t.setAttribute('aria-selected','false');t.setAttribute('tabindex','-1');});
   document.querySelectorAll('#deep-dive .panel').forEach(p=>p.classList.remove('active'));
   tab.setAttribute('aria-selected','true');
@@ -478,12 +481,13 @@ document.querySelectorAll('.card').forEach((card,i)=>{
   const wrap=document.createElement('div'); wrap.className='chart-data'; wrap.hidden=true;
   const table=document.createElement('table'); table.className='data-table'; table.innerHTML='<thead><tr><th scope="col">Measure</th><th scope="col">Value</th></tr></thead><tbody>'+rows.map(r=>'<tr><th scope="row">'+r[0]+'</th><td>'+r[1]+'</td></tr>').join('')+'</tbody>'; wrap.append(table);
   tableBtn.addEventListener('click',()=>{wrap.hidden=!wrap.hidden;tableBtn.textContent=wrap.hidden?'View data table':'Hide data table';});
-  csvBtn.addEventListener('click',()=>{const esc=s=>'"'+String(s).replace(/"/g,'""')+'"';const csv=[['Measure','Value'],...rows].map(r=>r.map(esc).join(',')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download=title.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.csv';a.click();URL.revokeObjectURL(a.href);});
-  shareBtn.addEventListener('click',async()=>{const text=title+' — '+rows.map(r=>r.join(': ')).join('; ')+' | Access to Data';try{if(navigator.share)await navigator.share({title,text,url:location.href});else{await navigator.clipboard.writeText(text+' '+location.href);shareBtn.textContent='Copied';setTimeout(()=>shareBtn.textContent='Share chart',1600);}}catch(e){}});
+  csvBtn.addEventListener('click',()=>{const esc=s=>'"'+String(s).replace(/"/g,'""')+'"';const csv=[['Measure','Value'],...rows].map(r=>r.map(esc).join(',')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download=title.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.csv';a.click();trackData('chart_csv_download', {chart_title:title});URL.revokeObjectURL(a.href);});
+  shareBtn.addEventListener('click',async()=>{const text=title+' — '+rows.map(r=>r.join(': ')).join('; ')+' | Access to Data';try{if(navigator.share)await navigator.share({title,text,url:location.href});else{await navigator.clipboard.writeText(text+' '+location.href);shareBtn.textContent='Copied';setTimeout(()=>shareBtn.textContent='Share chart',1600);}trackData('chart_shared', {chart_title:title,method:navigator.share?'native':'clipboard'});}catch(e){}});
   card.append(tools,wrap);
   if(!card.querySelector('.interpretation')){const d=document.createElement('details');d.className='interpretation';d.innerHTML='<summary>What this shows / what this cannot tell us</summary><div class="interpretation-grid"><div><strong>What this shows</strong><p>The values describe the population, period and measure stated on this chart.</p></div><div><strong>What this cannot tell us</strong><p>This comparison alone cannot prove cause and effect. Check definitions, uncertainty and source notes before drawing conclusions.</p></div></div>';card.append(d);}
 });
 
 </script>
+<script src="/data-analytics.js" defer></script>
 </body>
 </html>
