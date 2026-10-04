@@ -160,6 +160,22 @@
     }
 
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  
+    .data-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}
+    .data-meta>div,.topic-link{background:var(--offwhite);border:1px solid var(--line);border-radius:12px;padding:14px}
+    .data-meta strong{display:block;color:var(--forest);font-size:.82rem}.data-meta span{display:block;color:var(--muted);margin-top:4px}
+    .chart-tools{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 4px}.chart-tools button,.chart-tools a{font:inherit;font-weight:900;border:2px solid var(--forest);background:#fff;color:var(--forest);border-radius:999px;padding:8px 12px;cursor:pointer;text-decoration:none}
+    .chart-tools button:hover,.chart-tools a:hover{background:var(--forest);color:#fff}
+    .data-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:.92rem}.data-table th,.data-table td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}.data-table th{background:var(--green-soft);color:var(--forest)}
+    .chart-data details,.interpretation{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}.chart-data summary,.interpretation summary{font-weight:900;color:var(--link);cursor:pointer}
+    .interpretation-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}.interpretation-grid div{background:var(--offwhite);border:1px solid var(--line);border-radius:12px;padding:13px}.interpretation-grid strong{display:block;color:var(--forest);margin-bottom:4px}.interpretation-grid p{margin:0;color:var(--muted);font-size:.9rem}
+    .trend-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.trend-item{background:var(--offwhite);border:1px solid var(--line);border-radius:14px;padding:16px}.trend-item strong{display:block;font-size:1.65rem;color:var(--forest);margin:5px 0}.trend-arrow{font-weight:900;color:var(--forest)}
+    .topic-links{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.topic-link h3{margin:0 0 6px;color:var(--forest)}.topic-link p{color:var(--muted);margin:0 0 12px}.topic-link a{color:var(--link);font-weight:900}
+    .editorial-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.editorial-links a{font-weight:900;color:var(--link)}
+    .note-box{background:var(--green-soft);border-left:6px solid var(--forest);padding:14px 16px;border-radius:10px;margin:14px 0;color:var(--ink)}
+    .category-list{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.category-list span{background:var(--green-soft);border:1px solid #C8DDBC;color:var(--forest);font-weight:800;border-radius:999px;padding:7px 10px}
+    @media(max-width:680px){.data-meta,.topic-links,.trend-strip,.interpretation-grid{grid-template-columns:1fr}}
+
   </style>
 </head>
 <body>
@@ -174,7 +190,7 @@
       <a href="#overview">Overview</a>
       <a href="#deep-dive">Explore data</a>
       <a href="#everyday">Everyday life</a>
-      <a href="#sources">Sources</a>
+      <a href="#topics">Topics</a><a href="#sources">Sources</a>
       <button id="textBtn" type="button" aria-pressed="false">Larger text</button>
       <button id="contrastBtn" type="button" aria-pressed="false">High contrast</button>
       <a class="cta" href="data.csv" download>Download data</a>
@@ -196,14 +212,10 @@
 
 <main id="main">
   <section class="reader-summary" aria-labelledby="reader-summary-title">
-    <h2 id="reader-summary-title">What to know first</h2>
-    <p><strong>Around 1 in 4 people in the UK were classed as disabled in 2024–25.</strong> That is about 16.7 million people.</p>
-    <p><strong>Among people aged 16–64, the employment rate was 52.8% for disabled people and 82.5% for non-disabled people.</strong> The difference is 29.7 percentage points.</p>
-    <p><strong>PIP is a benefit, not a count of all disabled people.</strong> The 4.1 million PIP figure covers people entitled to PIP in England and Wales.</p>
-    <details>
-      <summary>What does “disabled” mean in these figures?</summary>
-      <p>The Family Resources Survey follows the core Equality Act 2010 definition: a physical or mental impairment that has a substantial and long-term negative effect on normal daily activities. Other sources can use slightly different definitions, so the site keeps the source and coverage with each figure.</p>
-    </details>
+    <h2 id="reader-summary-title">How to use this page</h2>
+    <p><strong>Start with the four headline cards, then open a topic for more detail.</strong> Percentages always keep their original population, area and time period beside them.</p>
+    <p><strong>PIP is a benefit measure, not a count of all disabled people.</strong> Survey estimates and administrative benefit counts answer different questions and should not be compared as if they measure the same population.</p>
+    <details><summary>What does “disabled” mean in these figures?</summary><p>The Family Resources Survey uses a definition consistent with the core Equality Act 2010 definition. Other sources can use slightly different definitions, so each figure keeps its source and coverage.</p></details>
   </section>
 
   <section id="overview" aria-labelledby="overview-title">
@@ -256,7 +268,29 @@
 
     <div id="prevalence" class="panel active two" role="tabpanel" aria-labelledby="t-prevalence">
       <article class="card"><h3>Share of people who are disabled by age</h3><p class="lead">The share of people classed as disabled is higher in older age groups. It has also risen among children and working-age adults over the last decade.</p><div class="chart"><div class="barrow"><span>Children</span><div class="track"><div class="fill" style="width:12%"></div></div><strong>12%</strong></div><div class="barrow"><span>Working age</span><div class="track"><div class="fill" style="width:23%"></div></div><strong>23%</strong></div><div class="barrow"><span>State Pension age</span><div class="track"><div class="fill" style="width:45%"></div></div><strong>45%</strong></div></div><div class="callout"><strong>Long-term change:</strong> the share of working-age adults classed as disabled rose from 17% in 2014–15 to 23% in 2024–25.</div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a></p></article>
-      <article class="card"><h3>How the share varies by area</h3><p class="lead">The percentage of people classed as disabled varies across the UK. Differences in age and other population characteristics may explain part of this.</p><div class="chart"><div class="barrow"><span>Scotland</span><div class="track"><div class="fill" style="width:30%"></div></div><strong>30%</strong></div><div class="barrow"><span>Wales</span><div class="track"><div class="fill" style="width:26%"></div></div><strong>26%</strong></div><div class="barrow"><span>UK</span><div class="track"><div class="fill" style="width:25%"></div></div><strong>25%</strong></div><div class="barrow"><span>N. Ireland</span><div class="track"><div class="fill" style="width:22%"></div></div><strong>22%</strong></div><div class="barrow"><span>London</span><div class="track"><div class="fill" style="width:17%"></div></div><strong>17%</strong></div></div><div class="mini-grid"><div class="mini"><span>Disabled females</span><strong>27%</strong><span>9.2 million</span></div><div class="mini"><span>Disabled males</span><strong>22%</strong><span>7.5 million</span></div><div class="mini"><span>UK total</span><strong>16.7 million</strong><span>2024–25</span></div></div><p class="source">Source: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a></p></article>
+      <article class="card"><h3>UK nations and English regions</h3>
+<p class="lead">Countries and English regions are shown separately so unlike geographic levels are not mixed in one ranking.</p>
+<div class="note-box"><strong>Latest 2024–25 country picture:</strong> Scotland 30%, Wales 26%, Northern Ireland 22%; England was below the UK average of 25%. London was the lowest English region at 17%.</div>
+<h4>Comparable nation snapshot · 2023–24</h4>
+<div class="chart">
+<div class="barrow"><span>Wales</span><div class="track"><div class="fill" style="width:30%"></div></div><strong>30%</strong></div>
+<div class="barrow"><span>Scotland</span><div class="track"><div class="fill" style="width:28%"></div></div><strong>28%</strong></div>
+<div class="barrow"><span>N. Ireland</span><div class="track"><div class="fill" style="width:25%"></div></div><strong>25%</strong></div>
+<div class="barrow"><span>England</span><div class="track"><div class="fill" style="width:24%"></div></div><strong>24%</strong></div>
+</div>
+<h4>English regions · 2023–24</h4>
+<div class="chart">
+<div class="barrow"><span>North East</span><div class="track"><div class="fill" style="width:29%"></div></div><strong>29%</strong></div>
+<div class="barrow"><span>South West</span><div class="track"><div class="fill" style="width:28%"></div></div><strong>28%</strong></div>
+<div class="barrow"><span>East Midlands</span><div class="track"><div class="fill" style="width:28%"></div></div><strong>28%</strong></div>
+<div class="barrow"><span>North West</span><div class="track"><div class="fill" style="width:27%"></div></div><strong>27%</strong></div>
+<div class="barrow"><span>Yorkshire & Humber</span><div class="track"><div class="fill" style="width:27%"></div></div><strong>27%</strong></div>
+<div class="barrow"><span>West Midlands</span><div class="track"><div class="fill" style="width:25%"></div></div><strong>25%</strong></div>
+<div class="barrow"><span>East</span><div class="track"><div class="fill" style="width:24%"></div></div><strong>24%</strong></div>
+<div class="barrow"><span>South East</span><div class="track"><div class="fill" style="width:22%"></div></div><strong>22%</strong></div>
+<div class="barrow"><span>London</span><div class="track"><div class="fill" style="width:17%"></div></div><strong>17%</strong></div>
+</div>
+<p class="source">Latest narrative: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP FRS 2024–25 ↗</a>. Comparable full regional snapshot: DWP FRS 2023–24 table 4.4.</p></article>
     </div>
 
     <div id="employment" class="panel two" role="tabpanel" aria-labelledby="t-employment">
@@ -276,16 +310,49 @@
       <article class="insight"><span class="tag">Food security</span><b>6% vs 2%</b><p>6% of households with a disabled adult used a food bank, compared with 2% of households with no disabled adults.</p><small>UK · financial year ending 2024</small></article>
       <article class="insight"><span class="tag">Work</span><b>29.7 <span class="unit-words">percentage points</span></b><p>52.8% of disabled working-age people were employed, compared with 82.5% of non-disabled people.</p><small>UK · age 16–64 · Apr–Jun 2025</small></article>
       <article class="insight"><span class="tag">Health conditions</span><b>30.5%</b><p>About 31 in every 100 disabled people reporting five or more health conditions were employed.</p><small>UK · 2024–25</small></article>
-      <article class="insight"><span class="tag">Housing</span><b>42.5 <span class="unit-words">percentage points</span></b><p>For people living in social housing, the employment-rate gap between disabled and non-disabled people was 42.5 percentage points.</p><small>UK · 2024–25</small></article>
+      <article class="insight"><span class="tag">Employment by housing situation</span><b>42.5 <span class="unit-words">percentage points</span></b><p>For people living in social housing, the employment-rate gap between disabled and non-disabled people was 42.5 percentage points.</p><small>UK · 2024–25</small></article>
     </div>
 
-    <div class="section-title"><div><h2>Commonly reported impairment types</h2><p>The most commonly reported impairment types differ by age group.</p></div></div>
+    <div class="section-title"><div><h2>Commonly reported impairment types</h2><p>The percentage means the percentage of disabled people in that age group reporting that impairment type.</p></div></div>
+  <div class="note-box"><strong>People can report more than one impairment type.</strong> These percentages are not parts of a whole and can add to more than 100%.</div>
     <div class="three panel active">
-      <article class="card"><h3>Disabled children</h3><div class="barrow"><span>Social or behavioural</span><div class="track"><div class="fill" style="width:61%"></div></div><strong>61%</strong></div><div class="barrow"><span>Learning</span><div class="track"><div class="fill" style="width:32%"></div></div><strong>32%</strong></div><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:26%"></div></div><strong>26%</strong></div></article>
-      <article class="card"><h3>Working-age disabled adults</h3><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:46%"></div></div><strong>46%</strong></div><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:40%"></div></div><strong>40%</strong></div><div class="barrow"><span>Stamina, breathing or fatigue</span><div class="track"><div class="fill" style="width:33%"></div></div><strong>33%</strong></div></article>
-      <article class="card"><h3>Disabled pensioners</h3><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:68%"></div></div><strong>68%</strong></div><div class="barrow"><span>Stamina, breathing or fatigue</span><div class="track"><div class="fill" style="width:45%"></div></div><strong>45%</strong></div><div class="barrow"><span>Dexterity</span><div class="track"><div class="fill" style="width:34%"></div></div><strong>34%</strong></div></article>
+      <article class="card"><h3>Disabled children</h3><p class="lead">Percentage of disabled children in this age group.</p><div class="barrow"><span>Social or behavioural</span><div class="track"><div class="fill" style="width:61%"></div></div><strong>61%</strong></div><div class="barrow"><span>Learning</span><div class="track"><div class="fill" style="width:32%"></div></div><strong>32%</strong></div><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:26%"></div></div><strong>26%</strong></div></article>
+      <article class="card"><h3>Working-age disabled adults</h3><p class="lead">Percentage of disabled working-age adults in this age group.</p><div class="barrow"><span>Mental health</span><div class="track"><div class="fill" style="width:46%"></div></div><strong>46%</strong></div><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:40%"></div></div><strong>40%</strong></div><div class="barrow"><span>Stamina, breathing or fatigue</span><div class="track"><div class="fill" style="width:33%"></div></div><strong>33%</strong></div></article>
+      <article class="card"><h3>Disabled pensioners</h3><p class="lead">Percentage of disabled State Pension age adults in this age group.</p><div class="barrow"><span>Mobility</span><div class="track"><div class="fill" style="width:68%"></div></div><strong>68%</strong></div><div class="barrow"><span>Stamina, breathing or fatigue</span><div class="track"><div class="fill" style="width:45%"></div></div><strong>45%</strong></div><div class="barrow"><span>Dexterity</span><div class="track"><div class="fill" style="width:34%"></div></div><strong>34%</strong></div></article>
     </div>
+    <div class="method"><h3>All impairment categories measured by FRS</h3><p>The official dataset also records categories that may not appear in the top three for an age group.</p><div class="category-list"><span>Dexterity</span><span>Hearing</span><span>Learning</span><span>Memory</span><span>Mental health</span><span>Mobility</span><span>Social or behavioural</span><span>Stamina, breathing or fatigue</span><span>Vision</span><span>Other area of life</span></div><p>Use the official table 4.6 for the complete age-by-category values. This page does not invent values that are not explicitly transcribed from the source.</p></div>
     <p class="source" style="color:#dce7d8;border-color:rgba(255,255,255,.2)">Impairment-type source: <a style="color:var(--green)" href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a>. Food-bank source: <a style="color:var(--green)" href="https://www.gov.uk/government/statistics/united-kingdom-food-security-digest-2025/united-kingdom-food-security-digest-2025" target="_blank" rel="noopener">UK Food Security Digest 2025 ↗</a>.</p>
+  </section>
+
+  <section id="trends" aria-labelledby="trends-title">
+    <div class="section-title"><div><h2 id="trends-title">Change over time</h2><p>Long-term movement is more useful than a single year, but survey and definition changes must be considered.</p></div></div>
+    <article class="card">
+      <div class="trend-strip">
+        <div class="trend-item"><span>All people classed as disabled</span><strong>20% <span class="trend-arrow">→</span> 25%</strong><span>2014–15 to 2024–25 · 12.9m → 16.7m</span></div>
+        <div class="trend-item"><span>Children</span><strong>7% <span class="trend-arrow">→</span> 12%</strong><span>2014–15 to 2024–25</span></div>
+        <div class="trend-item"><span>Working-age adults</span><strong>17% <span class="trend-arrow">→</span> 23%</strong><span>2014–15 to 2024–25</span></div>
+      </div>
+      <div class="interpretation"><strong>What this shows</strong><p>Reported disability prevalence has increased over the decade for the total population, children and working-age adults.</p><strong>What this cannot tell us</strong><p>These changes do not by themselves explain why prevalence changed. Survey methods, population age, awareness, diagnosis and social conditions may all matter.</p></div>
+      <p class="source">Source: <a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-2024-to-2025/family-resources-survey-financial-year-2024-to-2025" target="_blank" rel="noopener">DWP Family Resources Survey 2024–25 ↗</a></p>
+    </article>
+  </section>
+
+  <section id="freshness" aria-labelledby="freshness-title">
+    <div class="section-title"><div><h2 id="freshness-title">Data freshness & uncertainty</h2><p>Checked recently does not mean every statistic describes the same period.</p></div></div>
+    <div class="method">
+      <div class="data-meta"><div><strong>Data covers</strong><span>Varies by chart: 2023–24 to July 2026</span></div><div><strong>Source published</strong><span>Shown beside each source</span></div><div><strong>Last checked</strong><span>4 October 2026</span></div></div>
+      <p><strong>Survey figures are estimates.</strong> Small differences may not be statistically meaningful. Where confidence intervals or standard errors are available, use the source methodology before drawing conclusions.</p>
+      <p>The FRS does not survey people living in nursing or retirement homes, so estimates for older people may understate disability and impairment prevalence across the whole population.</p>
+    </div>
+  </section>
+
+  <section id="topics" aria-labelledby="topics-title">
+    <div class="section-title"><div><h2 id="topics-title">Focused topic guides</h2><p>Open a simpler page when you want one question rather than the whole dashboard.</p></div></div>
+    <div class="topic-links">
+      <article class="topic-link"><h3>Disability & employment</h3><p>Employment rates, the employment gap and why percentage points matter.</p><a href="employment.html">Open employment guide →</a></article>
+      <article class="topic-link"><h3>Impairment types</h3><p>How the FRS groups impairment types and why totals can exceed 100%.</p><a href="impairments.html">Open impairment guide →</a></article>
+      <article class="topic-link"><h3>Country & region comparisons</h3><p>UK nations first, then English regions as a separate comparison.</p><a href="country-comparisons.html">Open geography guide →</a></article>
+    </div>
   </section>
 
   <section id="sources" aria-labelledby="sources-title">
@@ -298,7 +365,8 @@
       <article class="source-card"><h3>UK Food Security Digest 2025</h3><p>Food-bank use by disability and other household characteristics.</p><a href="https://www.gov.uk/government/statistics/united-kingdom-food-security-digest-2025/united-kingdom-food-security-digest-2025" target="_blank" rel="noopener">Open statistics ↗</a><small>DEFRA / DWP sources</small></article>
       <article class="source-card"><h3>data.gov.uk</h3><p>Search reusable UK public datasets, including employment and disability-related data.</p><a href="https://www.data.gov.uk/" target="_blank" rel="noopener">Explore data.gov.uk ↗</a><small>UK public-sector open data</small></article>
     </div>
-    <div class="method"><h3>How to read the data</h3><p><strong>Different sources do not always measure disability in exactly the same way.</strong> The Family Resources Survey follows the core Equality Act 2010 definition: a physical or mental impairment with a substantial and long-term negative effect on normal daily activities. Labour-market publications use survey classifications aligned with the Equality Act definition.</p><p>Each figure keeps its original area and time period. For example, the PIP figure covers England and Wales, while the Family Resources Survey headline figure covers the whole UK.</p></div>
+    <div class="method"><h3>How to read the data</h3><p><strong>Use “What this shows” and “What this cannot tell us” below charts.</strong> Association does not prove that disability caused an observed difference.</p><p><strong>Different sources do not always measure disability in exactly the same way.</strong> The Family Resources Survey follows the core Equality Act 2010 definition: a physical or mental impairment with a substantial and long-term negative effect on normal daily activities. Labour-market publications use survey classifications aligned with the Equality Act definition.</p><p>Each figure keeps its original area and time period. For example, the PIP figure covers England and Wales, while the Family Resources Survey headline figure covers the whole UK.</p></div>
+  <div class="method"><h3>Editorial transparency</h3><p>Access to Data is an independent project that explains official UK statistics in accessible language. It is not an official government publication.</p><div class="editorial-links"><a href="about.html">About & editorial policy</a><a href="about.html#corrections">Report a correction</a><a href="about.html#updates">Update log</a></div></div>
   </section>
 </main>
 
@@ -382,6 +450,31 @@ document.querySelectorAll('.donut[data-donut]').forEach(donut=>{
 });
 const contrast=document.getElementById('contrastBtn');contrast.addEventListener('click',()=>{const on=document.body.classList.toggle('hc');contrast.setAttribute('aria-pressed',on);contrast.textContent=on?'Standard contrast':'High contrast';});
 const textBtn=document.getElementById('textBtn');textBtn.addEventListener('click',()=>{const on=document.body.classList.toggle('large-text');textBtn.setAttribute('aria-pressed',on);textBtn.textContent=on?'Standard text':'Larger text';});
+
+function cardRows(card){
+  const rows=[];
+  card.querySelectorAll('.barrow').forEach(r=>{const label=r.querySelector('span')?.textContent.trim();const val=r.querySelector('strong')?.textContent.replace(/\s+/g,' ').trim();if(label&&val)rows.push([label,val]);});
+  card.querySelectorAll('.compare>div').forEach(r=>{const label=r.querySelector('span')?.textContent.trim();const val=r.querySelector('.big')?.textContent.trim();if(label&&val)rows.push([label,val]);});
+  if(card.querySelector('.donut[data-donut]')){const d=card.querySelector('.donut[data-donut]');(donutData[d.dataset.donut]||[]).forEach(x=>rows.push([x.label,x.value+' ('+x.share+')']));}
+  return rows;
+}
+document.querySelectorAll('.card').forEach((card,i)=>{
+  const rows=cardRows(card); if(!rows.length)return;
+  const title=card.querySelector('h3')?.textContent.trim()||'Chart data';
+  const tools=document.createElement('div'); tools.className='chart-tools';
+  const tableBtn=document.createElement('button'); tableBtn.type='button'; tableBtn.textContent='View data table';
+  const csvBtn=document.createElement('button'); csvBtn.type='button'; csvBtn.textContent='Download chart CSV';
+  const shareBtn=document.createElement('button'); shareBtn.type='button'; shareBtn.textContent='Share chart';
+  tools.append(tableBtn,csvBtn,shareBtn);
+  const wrap=document.createElement('div'); wrap.className='chart-data'; wrap.hidden=true;
+  const table=document.createElement('table'); table.className='data-table'; table.innerHTML='<thead><tr><th scope="col">Measure</th><th scope="col">Value</th></tr></thead><tbody>'+rows.map(r=>'<tr><th scope="row">'+r[0]+'</th><td>'+r[1]+'</td></tr>').join('')+'</tbody>'; wrap.append(table);
+  tableBtn.addEventListener('click',()=>{wrap.hidden=!wrap.hidden;tableBtn.textContent=wrap.hidden?'View data table':'Hide data table';});
+  csvBtn.addEventListener('click',()=>{const esc=s=>'"'+String(s).replace(/"/g,'""')+'"';const csv=[['Measure','Value'],...rows].map(r=>r.map(esc).join(',')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download=title.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.csv';a.click();URL.revokeObjectURL(a.href);});
+  shareBtn.addEventListener('click',async()=>{const text=title+' — '+rows.map(r=>r.join(': ')).join('; ')+' | Access to Data';try{if(navigator.share)await navigator.share({title,text,url:location.href});else{await navigator.clipboard.writeText(text+' '+location.href);shareBtn.textContent='Copied';setTimeout(()=>shareBtn.textContent='Share chart',1600);}}catch(e){}});
+  card.append(tools,wrap);
+  if(!card.querySelector('.interpretation')){const d=document.createElement('details');d.className='interpretation';d.innerHTML='<summary>What this shows / what this cannot tell us</summary><div class="interpretation-grid"><div><strong>What this shows</strong><p>The values describe the population, period and measure stated on this chart.</p></div><div><strong>What this cannot tell us</strong><p>This comparison alone cannot prove cause and effect. Check definitions, uncertainty and source notes before drawing conclusions.</p></div></div>';card.append(d);}
+});
+
 </script>
 </body>
 </html>
